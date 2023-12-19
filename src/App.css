@@ -11,7 +11,10 @@
 	--bg-dark-main: #000000;
 	--bg-dark-secondary: #0a0f0f;
 	--bg-dark-highlighted: #151e1e;
-	--bg-dark-hover: ;
+	--bg-dark-hover: #2b3c3c;
+
+	--font-main: Fira Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	--font-accent: Fira Code, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #root {
@@ -19,28 +22,35 @@
 }
 
 /* BUTTONS */
-a.button {
-	color: var(--text-white);
-	padding: 16px 24px;
-	border-radius: 8px;
-	outline: none;
-	border: none;
 
-	font-family: Fira Code;
-	font-size: 14px;
-	font-weight: 600;
+.buttons-container {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
 
-	&.main {
+	.button {
+		color: var(--text-white);
+		padding: 16px 24px;
+		border-radius: 8px;
+		outline: none;
+		border: none;
+
+		font-family: Fira Code;
+		font-size: 14px;
+		font-weight: 600;
+
+		&:hover {
+			opacity: 0.5;
+			cursor: pointer;
+		}
+	}
+
+	.main {
 		background-color: var(--accent-blue);
 	}
 
-	&.secondary {
+	.secondary {
 		background-color: var(--bg-dark-main);
-	}
-
-	&:hover {
-		opacity: 0.5;
-		cursor: pointer;
 	}
 }
 
@@ -58,7 +68,7 @@ section.projects {
 		.title {
 			> h1 {
 				color: var(--accent-blue);
-				font-family: Fira Code;
+				font-family: var(--font-accent);
 				font-size: 14px;
 				font-weight: 500;
 			}
@@ -82,11 +92,6 @@ section.projects {
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 150%; /* 27px */
-		}
-
-		.btn-container {
-			display: flex;
-			gap: 24px;
 		}
 	}
 }
@@ -140,12 +145,6 @@ section.projects {
 					font-weight: 400;
 					line-height: 150%; /* 24px */
 				}
-			}
-
-			.buttons {
-				display: flex;
-				flex-direction: row;
-				gap: 24px;
 			}
 		}
 	}
