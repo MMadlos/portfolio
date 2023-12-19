@@ -1,3 +1,97 @@
 #root {
 	width: 100%;
 }
+
+/* FOOTER */
+
+footer {
+	padding: 80px;
+	/* display: flex;
+	flex-direction: column;
+	gap: 16px; */
+
+	color: #fafafa;
+	background-color: black;
+	font-family: Fira Code;
+
+	> a {
+		display: inline-block;
+	}
+	.logo {
+		font-family: Fira Sans;
+		font-size: 40px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	.btm {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.btm-left {
+			width: 60%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.title-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				> h1 {
+					font-family: Fira Sans;
+					font-size: 16px;
+					font-weight: 800;
+					letter-spacing: 0.24px;
+					text-transform: uppercase;
+				}
+
+				h2 {
+					text-transform: none;
+					font-weight: 500;
+					font-size: 12px;
+				}
+			}
+
+			.contact-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				font-size: 12px;
+				font-weight: 500;
+			}
+
+			> nav > ul {
+				flex-direction: column;
+				justify-content: space-between;
+				gap: 0;
+			}
+
+			> nav > ul ~ li {
+				margin: 0;
+				padding: 0;
+			}
+
+			> nav > ul > li > a {
+				font-size: 12px;
+				font-weight: 700;
+			}
+		}
+
+		.btm-right {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			font-family: Fira Code;
+			font-size: 12px;
+			font-weight: 700;
+
+			> a:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}
