@@ -3,10 +3,12 @@ import More from "./More"
 
 function Projects() {
 	return (
-		<section className="projects">
-			<Featured />
-			<More />
-		</section>
+		<>
+			<section className="projects">
+				<Featured />
+				<More />
+			</section>
+		</>
 	)
 }
 
