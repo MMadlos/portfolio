@@ -4,22 +4,31 @@ function Header() {
 	return (
 		<header>
 			<nav>
-				<p className="logo">MM</p>
-
+				<a href="#">
+					<p className="logo">MM</p>
+				</a>
 				<ul>
-					<li>Projects</li>
-					<li>About</li>
+					<li>
+						<a href="#">Projects</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
 				</ul>
 			</nav>
 
 			<div className="btm-container">
 				<div className="description">
-					<h1>Front end developer</h1>
+					<h1>
+						Front end <br />
+						developer
+					</h1>
 					<div className="name">
 						<h2>Michael Madlos</h2>
 						<p>Barcelona, Spain</p>
 					</div>
 				</div>
+
 				<div className="social-media-container">
 					<div className="social-media-icon">
 						<a href="#">
