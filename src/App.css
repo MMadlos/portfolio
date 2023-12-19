@@ -1,5 +1,93 @@
+:root {
+	--text-black: #333333;
+	--text-white: #fafafa;
+	--text-grey: #7f7f7f;
+
+	--accent-blue: #4700ff;
+
+	--bg-light-main: #fafafa;
+	--bg-light-secondary: #f0f2f5;
+
+	--bg-dark-main: #000000;
+	--bg-dark-secondary: #0a0f0f;
+	--bg-dark-highlighted: #151e1e;
+	--bg-dark-hover: ;
+}
+
 #root {
 	width: 100%;
+}
+
+/* BUTTONS */
+a.button {
+	color: var(--text-white);
+	padding: 16px 24px;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+
+	font-family: Fira Code;
+	font-size: 14px;
+	font-weight: 600;
+
+	&.main {
+		background-color: var(--accent-blue);
+	}
+
+	&.secondary {
+		background-color: var(--bg-dark-main);
+	}
+
+	&:hover {
+		opacity: 0.5;
+		cursor: pointer;
+	}
+}
+
+/* PROJECTS */
+section.projects {
+	background-color: #fafafa;
+	padding: 120px 10vw;
+
+	.featured-project {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 120px;
+
+		.title {
+			> h1 {
+				color: var(--accent-blue);
+				font-family: Fira Code;
+				font-size: 14px;
+				font-weight: 500;
+			}
+
+			> h2 {
+				color: var(--text-black);
+				font-family: Fira Sans;
+				font-size: 32px;
+				font-weight: 800;
+				text-transform: uppercase;
+				text-align: center;
+			}
+		}
+
+		.description {
+			max-width: 464px;
+			color: var(--text-black);
+			text-align: center;
+			font-family: Fira Sans;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 150%; /* 27px */
+		}
+
+		.btn-container {
+			display: flex;
+			gap: 24px;
+		}
+	}
 }
 
 /* FOOTER */
