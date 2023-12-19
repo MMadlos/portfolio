@@ -1,4 +1,3 @@
-import "./about.css"
 import Personal from "./Personal"
 import Faq from "./FAQ"
 import Stack from "./Stack"

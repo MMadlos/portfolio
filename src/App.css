@@ -1,3 +1,14 @@
+/*
+INDEX
+- GENERAL
+- BUTTONS
+- HEADER
+- PROJECTS
+- MORE PROJECTS
+- ABOUT
+- FOOTER
+*/
+
 :root {
 	--text-black: #333333;
 	--text-white: #fafafa;
@@ -134,17 +145,16 @@ header {
 			.name {
 				display: flex;
 				flex-direction: column;
-			}
 
-			.name > h2 {
-				text-transform: none;
-				font-size: 16px;
-				font-weight: 700;
-			}
+				> h2 {
+					font-size: 16px;
+					font-weight: 700;
+				}
 
-			> p {
-				font-size: 14px;
-				font-weight: 500;
+				> p {
+					font-size: 14px;
+					font-weight: 500;
+				}
 			}
 		}
 
@@ -246,13 +256,191 @@ section.projects {
 				> h2 {
 					font-size: 18px;
 					font-weight: 600;
-					text-transform: none;
 				}
 
 				> p {
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 150%; /* 24px */
+				}
+			}
+		}
+	}
+}
+
+/* ABOUT */
+section.about {
+	font-family: var(--font-accent);
+	color: var(--text-white);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 120px 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+	background-image: linear-gradient(180deg, var(--bg-dark-main) 0%, transparent 30%), var(--bg-img-15);
+	background-color: var(--bg-dark-main);
+
+	.about-content {
+		max-width: 980px;
+		padding: 32px;
+		border-radius: 8px;
+
+		background-color: var(--bg-dark-secondary);
+
+		> h2 {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 150%; /* 21px */
+		}
+
+		.groups-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 40px;
+
+			padding-top: 24px;
+
+			.stack-container {
+				display: flex;
+				gap: 12px;
+				flex-direction: column;
+
+				> h3 {
+					color: var(--text-grey);
+					font-size: 12px;
+					font-weight: 500;
+				}
+
+				.stack-group {
+					display: flex;
+					height: 100%;
+					gap: 8px;
+
+					.stack {
+						width: 86px;
+						background-color: var(--bg-dark-highlighted);
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+
+						padding: 16px;
+						border-radius: 16px;
+						gap: 16px;
+
+						> img {
+							padding: 6px;
+						}
+
+						> p {
+							text-align: center;
+							font-size: 12px;
+							font-weight: 600;
+						}
+
+						&:hover {
+							background-color: var(--bg-dark-hover);
+						}
+					}
+				}
+			}
+		}
+
+		&.personal-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+
+			background-color: transparent;
+
+			> img {
+				width: 150px;
+				aspect-ratio: 1 / 1;
+				border-radius: 50%;
+			}
+
+			.description {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				max-width: 500px;
+
+				> h2 {
+					text-transform: uppercase;
+					text-align: center;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 150%; /* 21px */
+				}
+
+				> p {
+					opacity: 0.5;
+					text-align: center;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 150%; /* 21px */
+				}
+			}
+
+			.social-media-container {
+				display: flex;
+				gap: 40px;
+
+				> .social-media-icon {
+					padding: 8px;
+					border-radius: 8px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					> a {
+						line-height: 0;
+						font-size: 25px;
+					}
+
+					&:hover {
+						background-color: var(--bg-dark-hover);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		&.faq {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+
+			.question-container {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				padding: 24px;
+				border-radius: 8px;
+
+				background-color: var(--bg-dark-highlighted);
+
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 150%; /* 21px */
+
+				.answer {
+					opacity: 0.6;
+					font-weight: 400;
+				}
+
+				&:hover {
+					background-color: var(--bg-dark-hover);
 				}
 			}
 		}
@@ -303,7 +491,6 @@ footer {
 				}
 
 				h2 {
-					text-transform: none;
 					font-weight: 500;
 					font-size: 12px;
 				}
