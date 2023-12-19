@@ -15,10 +15,24 @@
 
 	--font-main: Fira Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	--font-accent: Fira Code, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+	/* --bg-img-35: url("../../assets/bg_waves_35.png"); */
+	--bg-img-35: url("./assets/bg_waves_35.png");
+	--bg-img-15: url("./assets/bg_waves_15.png");
+	--bg-img-100: url("./assets/bg_waves_100.png");
 }
 
 #root {
 	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fafafa;
+}
+
+li {
+	list-style: none;
 }
 
 /* BUTTONS */
@@ -51,6 +65,101 @@
 
 	.secondary {
 		background-color: var(--bg-dark-main);
+	}
+}
+
+/* HEADER */
+header {
+	background-image: var(--bg-img-35);
+	background-color: var(--accent-blue);
+
+	padding: 40px 80px;
+	color: var(--text-white);
+
+	height: 468px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	> nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		list-style: none;
+		display: flex;
+		gap: 40px;
+
+		.logo {
+			font-family: var(--font-main);
+			text-transform: uppercase;
+			font-size: 40px;
+			font-weight: 900;
+		}
+
+		> ul {
+			display: flex;
+			flex-direction: row;
+			gap: 40px;
+
+			font-family: var(--font-accent);
+			font-size: 16px;
+			font-weight: 700;
+
+			> li :hover {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.btm-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		.description {
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+
+			> h1 {
+				font-family: var(--font-main);
+				text-transform: uppercase;
+				font-size: 32px;
+				font-weight: 900;
+				letter-spacing: 0.36px;
+				line-height: 100%;
+			}
+
+			.name {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.name > h2 {
+				text-transform: none;
+				font-size: 16px;
+				font-weight: 700;
+			}
+
+			> p {
+				font-size: 14px;
+				font-weight: 500;
+			}
+		}
+
+		.social-media-container {
+			display: flex;
+			gap: 32px;
+
+			.social-media-icon {
+				font-size: 25px;
+
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+		}
 	}
 }
 
