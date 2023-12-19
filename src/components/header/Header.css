@@ -1,0 +1,25 @@
+header {
+	background-image: url("../../assets/bg_waves_35.png");
+	background-color: #4700ff;
+
+	padding: 40px 80px;
+	color: #fafafa;
+
+	height: 468px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	> nav,
+	div {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		font-family: Fira Sans;
+		font-size: 40px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+}
