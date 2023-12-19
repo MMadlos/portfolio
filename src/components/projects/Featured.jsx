@@ -1,4 +1,5 @@
 import IMAGE from "../../assets/avatar_test.jpg"
+import Buttons from "./Buttons"
 
 function Featured() {
 	return (
@@ -15,14 +16,10 @@ function Featured() {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida eleifend urna nec molestie. Cras non sem sodales velit dictum molestie.
 			</p>
 
-			<div className="btn-container">
-				<a className="button main">
-					Website <i className="fa-solid fa-arrow-up-right-from-square"></i>
-				</a>
-				<a className="button secondary">
-					Github <i className="fa-solid fa-arrow-up-right-from-square"></i>
-				</a>
-			</div>
+			<Buttons
+				webiste="#"
+				github="#"
+			/>
 		</section>
 	)
 }
