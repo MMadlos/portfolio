@@ -92,8 +92,14 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 
+	@media (max-width: 500px) {
+		padding-left: 5vw;
+		padding-right: 24px;
+	}
+
 	> nav {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 
@@ -229,13 +235,13 @@ section.projects {
 	}
 
 	.projects-container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 64px;
+		display: grid;
+		grid-auto-flow: dense;
+		grid-auto-rows: min-content;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+		gap: 48px;
 
 		.project {
-			width: 100%;
 			display: flex;
 			flex-direction: column;
 			gap: 48px;
@@ -248,7 +254,7 @@ section.projects {
 				display: flex;
 				flex-direction: column;
 
-				gap: 24px;
+				gap: 8px;
 				color: var(--text-black);
 
 				> h2 {
@@ -455,27 +461,40 @@ footer {
 	background-color: var(--bg-dark-main);
 	font-family: var(--font-accent);
 
-	> a {
-		display: inline-block;
+	@media (max-width: 900px) {
+		padding: 5vw;
 	}
 
-	.logo {
-		font-family: var(--font-main);
-		font-size: 40px;
-		font-weight: 900;
-		text-transform: uppercase;
+	> a {
+		display: inline-block;
+
+		.logo {
+			font-family: var(--font-main);
+			font-size: 40px;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
 	}
 
 	.btm {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 900px) {
+			flex-wrap: wrap;
+			gap: 24px;
+		}
 
 		.btm-left {
-			width: 60%;
 			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+			flex-wrap: wrap;
+
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+			grid-row-gap: 24px;
+			grid-column-gap: 80px;
+			width: 100%;
 
 			.title-container {
 				display: flex;
@@ -500,38 +519,52 @@ footer {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+
 				font-size: 12px;
 				font-weight: 500;
 			}
 
-			> nav > ul {
-				flex-direction: column;
-				justify-content: space-between;
-				gap: 0;
-			}
+			> nav {
+				> ul {
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					gap: 8px;
 
-			> nav > ul ~ li {
-				margin: 0;
-				padding: 0;
-			}
+					> li {
+						margin: 0;
+						padding: 0;
+						font-size: 12px;
+						font-weight: 700;
 
-			> nav > ul > li > a {
-				font-size: 12px;
-				font-weight: 700;
+						&:hover {
+							opacity: 0.5;
+							cursor: pointer;
+						}
+					}
+				}
 			}
 		}
 
 		.btm-right {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-
-			font-family: Fira Code;
+			font-family: var(--font-accent);
 			font-size: 12px;
 			font-weight: 700;
+			text-align: right;
+
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			min-width: fit-content;
+			gap: 8px;
 
 			> a:hover {
 				opacity: 0.5;
+			}
+
+			@media (max-width: 900px) {
+				text-align: left;
 			}
 		}
 	}
