@@ -27,8 +27,13 @@ function Footer() {
 				</div>
 
 				<div className="btm-right">
-					<a href="#"> Github</a>
-					<a href="#">Linkedin</a>
+					<a href="#">
+						{" "}
+						Github <i className="fa-solid fa-arrow-up-right-from-square"></i>
+					</a>
+					<a href="#">
+						Linkedin <i className="fa-solid fa-arrow-up-right-from-square"></i>
+					</a>
 				</div>
 			</div>
 		</footer>
