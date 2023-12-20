@@ -1,4 +1,4 @@
-import stackLogos from "./stackLogos"
+import { stackLogos } from "./stackLogos"
 
 function StackGroup({ name, children }) {
 	return (

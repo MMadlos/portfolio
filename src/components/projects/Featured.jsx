@@ -17,8 +17,8 @@ function Featured() {
 			</p>
 
 			<Buttons
-				webiste="#"
-				github="#"
+				website="https://online-shop-brown-two.vercel.app/"
+				github="https://github.com/MMadlos/online-shop"
 			/>
 		</section>
 	)

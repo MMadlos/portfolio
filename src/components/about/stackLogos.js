@@ -12,7 +12,7 @@ import JestLogo from "../../assets/logos/logo_jest.png"
 import RTLLogo from "../../assets/logos/logo_RTL.png"
 import FigmaLogo from "../../assets/logos/logo_figma.png"
 
-const stackLogos = {
+export const stackLogos = {
 	js: {
 		src: JSLogo,
 		alt: "Image of JS logo",
@@ -79,5 +79,3 @@ const stackLogos = {
 		text: "Figma",
 	},
 }
-
-export default stackLogos
