@@ -27,7 +27,6 @@ INDEX
 	--font-main: Fira Sans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	--font-accent: Fira Code, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-	/* --bg-img-35: url("../../assets/bg_waves_35.png"); */
 	--bg-img-35: url("./assets/bg_waves_35.png");
 	--bg-img-15: url("./assets/bg_waves_15.png");
 	--bg-img-100: url("./assets/bg_waves_100.png");
@@ -42,6 +41,7 @@ a {
 	color: #fafafa;
 }
 
+ul,
 li {
 	list-style: none;
 }
@@ -175,7 +175,8 @@ header {
 
 /* PROJECTS */
 section.projects {
-	background-color: #fafafa;
+	background-color: var(--bg-light-main);
+	font-family: var(--font-main);
 
 	.featured-project {
 		display: flex;
@@ -194,7 +195,6 @@ section.projects {
 
 			> h2 {
 				color: var(--text-black);
-				font-family: Fira Sans;
 				font-size: 32px;
 				font-weight: 800;
 				text-transform: uppercase;
@@ -207,7 +207,6 @@ section.projects {
 			color: var(--text-black);
 			text-align: center;
 
-			font-family: Fira Sans;
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 150%; /* 27px */
@@ -215,7 +214,6 @@ section.projects {
 	}
 }
 
-/* MORE PROJECTS */
 .more-projects {
 	background-color: var(--bg-light-secondary);
 	padding: 80px 10vw;
@@ -225,7 +223,7 @@ section.projects {
 
 	> h1 {
 		color: var(--accent-blue);
-		font-family: Fira Code;
+		font-family: var(--font-accent);
 		font-size: 14px;
 		font-weight: 500;
 	}
@@ -233,6 +231,7 @@ section.projects {
 	.projects-container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		gap: 64px;
 
 		.project {
@@ -251,7 +250,6 @@ section.projects {
 
 				gap: 24px;
 				color: var(--text-black);
-				font-family: Fira Sans;
 
 				> h2 {
 					font-size: 18px;
@@ -261,7 +259,7 @@ section.projects {
 				> p {
 					font-size: 16px;
 					font-weight: 400;
-					line-height: 150%; /* 24px */
+					line-height: 150%;
 				}
 			}
 		}
@@ -321,6 +319,7 @@ section.about {
 
 				.stack-group {
 					display: flex;
+					flex-wrap: wrap;
 					height: 100%;
 					gap: 8px;
 
@@ -452,15 +451,16 @@ section.about {
 footer {
 	padding: 80px;
 
-	color: #fafafa;
-	background-color: black;
-	font-family: Fira Code;
+	color: var(--text-white);
+	background-color: var(--bg-dark-main);
+	font-family: var(--font-accent);
 
 	> a {
 		display: inline-block;
 	}
+
 	.logo {
-		font-family: Fira Sans;
+		font-family: var(--font-main);
 		font-size: 40px;
 		font-weight: 900;
 		text-transform: uppercase;
@@ -483,7 +483,7 @@ footer {
 				justify-content: space-between;
 
 				> h1 {
-					font-family: Fira Sans;
+					font-family: var(--font-main);
 					font-size: 16px;
 					font-weight: 800;
 					letter-spacing: 0.24px;
