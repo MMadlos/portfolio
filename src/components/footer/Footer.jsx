@@ -1,8 +1,10 @@
 function Footer() {
 	return (
 		<footer>
-			<a href="#">
-				<p className="logo">MM</p>
+			<a
+				href="#"
+				className="logo">
+				MM
 			</a>
 			<div className="btm">
 				<div className="btm-left">
