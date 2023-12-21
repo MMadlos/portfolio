@@ -303,6 +303,32 @@ section.projects {
 	}
 }
 
+/* ANIMATION */
+
+@keyframes show {
+	from {
+		opacity: 0.2;
+		scale: 40%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 120%;
+	}
+}
+
+.main-container {
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 10% cover 50%;
+	animation-fill-mode: both;
+}
+
+/* MORE PROJECTS */
 .more-projects {
 	background-color: var(--bg-light-secondary);
 	padding: 80px 10vw;
