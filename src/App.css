@@ -208,6 +208,10 @@ section.projects {
 			}
 		}
 
+		> img {
+			width: 100%;
+		}
+
 		.description {
 			max-width: 464px;
 			color: var(--text-black);
@@ -216,6 +220,85 @@ section.projects {
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 150%; /* 27px */
+		}
+	}
+}
+
+/* IMAGE COMPOSITION */
+.main-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+
+	gap: 16px;
+
+	> div {
+		height: 100%;
+	}
+
+	> div > img,
+	.right > div > img {
+		object-fit: cover;
+		/* border: 2px solid var(--bg-dark-main); */
+		border-radius: 8px;
+	}
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+
+		gap: 16px;
+
+		> img:first-of-type {
+			width: 50%;
+		}
+
+		> img:last-child {
+			max-height: 200px;
+			width: 100%;
+		}
+	}
+	.center {
+		> img {
+			height: 100%;
+		}
+	}
+	.right {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 16px;
+		height: 100%;
+		width: 100%;
+
+		.top {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			height: 100%;
+
+			gap: 16px;
+
+			> img {
+				width: calc(50% - 8px);
+
+				&:first-of-type {
+					height: 100%;
+				}
+			}
+		}
+
+		.btm {
+			width: 100%;
+			> img {
+				height: 80%;
+				width: 100%;
+			}
 		}
 	}
 }
