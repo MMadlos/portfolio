@@ -713,3 +713,36 @@ footer {
 		}
 	}
 }
+
+/* TEST - TEXT REVEAL - ABOUT SECTION */
+.scroll-reveal > p {
+	opacity: 100% !important;
+}
+
+.scroll-reveal span {
+	color: hsl(0 0% 100% / 0.2);
+
+	background-clip: text;
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	background-image: linear-gradient(90deg, var(--text-white), var(--text-white));
+
+	animation: scroll-reveal linear forwards;
+	animation-timeline: view();
+}
+
+.scroll-reveal h2 span {
+	animation-range-start: 20vh;
+	animation-range-end: 30vh;
+}
+
+.scroll-reveal p span {
+	animation-range-start: 30vh;
+	animation-range-end: 50vh;
+}
+
+@keyframes scroll-reveal {
+	to {
+		background-size: 100% 100%;
+	}
+}
