@@ -1,3 +1,5 @@
+import { copyEmail } from "../../utilities/copyEmail"
+
 function Footer() {
 	return (
 		<footer>
@@ -14,7 +16,12 @@ function Footer() {
 					</div>
 					<div className="contact-container">
 						<p>Barcelona, Spain</p>
-						<p>MichaelMadlos@gmail.com</p>
+						<div
+							className="copy-email"
+							onClick={copyEmail}>
+							<p className="email">MichaelMadlos@gmail.com</p>
+							<i className="fa-solid fa-copy"></i>
+						</div>
 					</div>
 					<nav>
 						<ul>

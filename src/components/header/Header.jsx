@@ -1,3 +1,5 @@
+import { copyEmail } from "../../utilities/copyEmail"
+
 function Header() {
 	return (
 		<header>
@@ -45,12 +47,10 @@ function Header() {
 						</a>
 					</div>
 					<div className="social-media-icon">
-						<a
-							href="#"
-							target="_blank"
-							rel="noreferrer noopener">
-							<i className="fa-solid fa-envelope" />
-						</a>
+						<i
+							className="fa-solid fa-envelope"
+							onClick={copyEmail}
+						/>
 					</div>
 				</div>
 			</div>

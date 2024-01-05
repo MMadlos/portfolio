@@ -1,4 +1,5 @@
 import AVATAR from "../../assets/avatar_test.jpg"
+import { copyEmail } from "../../utilities/copyEmail"
 
 function Personal() {
 	return (
@@ -14,11 +15,11 @@ function Personal() {
 
 				<p>
 					<span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida eleifend urna nec molestie. Cras non sem sodales velit dictum molestie.
+						Self-taught front end developer. <br /> Love productivity apps.
 					</span>
 				</p>
 			</div>
-			<div className="social-media-container">
+			<div className="social-media-container scroll-reveal">
 				<div className="social-media-icon">
 					<a href="#">
 						<i className="fa-brands fa-github" />
@@ -30,8 +31,11 @@ function Personal() {
 					</a>
 				</div>
 				<div className="social-media-icon">
-					<a href="#">
-						<i className="fa-solid fa-envelope" />
+					<a>
+						<i
+							className="fa-solid fa-envelope"
+							onClick={copyEmail}
+						/>
 					</a>
 				</div>
 			</div>
