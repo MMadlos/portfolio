@@ -15,7 +15,7 @@ function Personal() {
 
 				<p>
 					<span>
-						Self-taught front end developer. <br /> Love productivity apps.
+						<strong>Self-taught Front-end developer with strong UX/UI skills.</strong> <br /> Love productivity apps.
 					</span>
 				</p>
 			</div>

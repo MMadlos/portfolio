@@ -581,14 +581,31 @@ section.about {
 					padding: 16px 4vw;
 				}
 
-				.answer {
-					opacity: 0.6;
-					font-weight: 400;
+				.question {
+					font-weight: 600;
 				}
 
-				&:hover {
-					background-color: var(--bg-dark-hover);
+				.answer > p {
+					color: var(--text-grey);
+					font-weight: 400;
+					margin-bottom: 16px;
+
+					> a {
+						color: inherit;
+						text-decoration: underline;
+						text-decoration-style: dashed;
+						text-underline-offset: 3px;
+						text-decoration-skip-ink: all;
+
+						&:hover {
+							color: var(--text-white);
+						}
+					}
 				}
+
+				/* &:hover {
+					background-color: var(--bg-dark-hover);
+				} */
 			}
 		}
 	}
