@@ -25,7 +25,10 @@ function Header() {
 					</h1>
 					<div className="name">
 						<h2>Michael Madlos</h2>
-						<p>Barcelona, Spain</p>
+						<p>
+							<i className="fa-solid fa-location-dot" />
+							Barcelona, Spain
+						</p>
 					</div>
 				</div>
 
