@@ -83,8 +83,8 @@ li {
 
 /* HEADER */
 header {
-	background-image: var(--bg-img-35);
-	background-color: var(--accent-blue);
+	background-image: var(--bg-img-15);
+	background-color: var(--bg-dark-main);
 
 	padding: 40px 80px;
 	color: var(--text-white);
@@ -172,7 +172,11 @@ header {
 
 				> p {
 					font-size: 14px;
-					font-weight: 500;
+					font-weight: 600;
+
+					> i {
+						margin-right: 8px;
+					}
 				}
 			}
 		}
