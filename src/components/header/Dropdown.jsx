@@ -13,14 +13,16 @@ function Dropdown() {
 		handleLang()
 	}
 
+	const chevronDirection = isOpen ? "fa-chevron-up" : "fa-chevron-down"
+
 	return (
 		<div className="dropdown">
 			<button onClick={handleOpen}>
-				{lang} <i className="fa-solid fa-chevron-down" />
+				{lang} <i className={`fa-solid ${chevronDirection}`} />
 			</button>
 			<div
-				data-is-Open={isOpen}
-				className="dropdown-options">
+				className="dropdown-options"
+				data-is-open={isOpen}>
 				<button onClick={switchLang}>{switchedLang}</button>
 			</div>
 		</div>

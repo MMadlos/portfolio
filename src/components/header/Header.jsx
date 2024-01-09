@@ -15,8 +15,10 @@ function Header() {
 					<li>
 						<a href="#">About</a>
 					</li>
+					<li>
+						<Dropdown />
+					</li>
 				</ul>
-				<Dropdown />
 			</nav>
 
 			<div className="btm-container">

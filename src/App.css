@@ -111,6 +111,7 @@ header {
 		gap: 40px;
 
 		@media (max-width: 500px) {
+			flex-direction: row-reverse;
 			align-items: flex-start;
 		}
 
@@ -125,6 +126,7 @@ header {
 		> ul {
 			display: flex;
 			flex-direction: row;
+			align-items: center;
 			gap: 40px;
 
 			font-size: 16px;
@@ -132,11 +134,11 @@ header {
 
 			@media (max-width: 500px) {
 				flex-direction: column;
-				gap: 8px;
-				text-align: right;
+				align-items: start;
+				gap: 16px;
 			}
 
-			> li :hover {
+			> li:has(a):hover {
 				opacity: 0.5;
 			}
 		}
@@ -756,7 +758,49 @@ footer {
 	}
 }
 
-/* TEST - TEXT REVEAL - ABOUT SECTION */
+/* DROPDOWN */
+.dropdown {
+	min-width: 150px;
+
+	button {
+		width: 100%;
+		padding: 4px 12px;
+		margin-bottom: 4px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		color: var(--text-black);
+		font-weight: 600;
+		border: none;
+		border-radius: 4px;
+
+		&:hover {
+			background-color: var(--text-grey);
+			color: var(--text-white);
+		}
+	}
+
+	.dropdown-options {
+		position: relative;
+
+		&[data-is-open="false"] {
+			opacity: 0;
+		}
+
+		&[data-is-open="true"] {
+			opacity: 1;
+		}
+
+		button {
+			position: absolute;
+		}
+	}
+}
+
+/* TEXT REVEAL - ABOUT SECTION */
 .scroll-reveal > p {
 	opacity: 100% !important;
 }
