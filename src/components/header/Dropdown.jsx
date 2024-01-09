@@ -1,13 +1,11 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { LanguageContext } from "../../App"
 
 function Dropdown() {
-	const [lang, setLang] = useState("Castellano")
+	const { lang, switchedLang, handleLang } = useContext(LanguageContext)
 	const [isOpen, setIsOpen] = useState(false)
 
-	const switchedLang = lang === "Castellano" ? "English" : "Castellano"
-
 	const handleOpen = () => setIsOpen(!isOpen)
-	const handleLang = () => setLang(switchedLang)
 	const switchLang = () => {
 		handleOpen()
 		handleLang()
@@ -23,7 +21,7 @@ function Dropdown() {
 			<div
 				className="dropdown-options"
 				data-is-open={isOpen}>
-				<button onClick={isOpen && switchLang}>{switchedLang}</button>
+				<button onClick={isOpen ? switchLang : undefined}>{switchedLang}</button>
 			</div>
 		</div>
 	)
