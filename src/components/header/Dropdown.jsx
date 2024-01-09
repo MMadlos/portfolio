@@ -23,7 +23,7 @@ function Dropdown() {
 			<div
 				className="dropdown-options"
 				data-is-open={isOpen}>
-				<button onClick={switchLang}>{switchedLang}</button>
+				<button onClick={isOpen && switchLang}>{switchedLang}</button>
 			</div>
 		</div>
 	)
