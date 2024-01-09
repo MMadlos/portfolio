@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer"
 export const LanguageContext = createContext({
 	lang: "",
 	switchedLang: "",
+	contentLang: "",
 	setLang: () => {},
 	handleLang: () => {},
 })
@@ -16,11 +17,12 @@ export const LanguageContext = createContext({
 function App() {
 	const [lang, setLang] = useState("Castellano")
 
+	const contentLang = lang === "Castellano" ? "es" : "en"
 	const switchedLang = lang === "Castellano" ? "English" : "Castellano"
 	const handleLang = () => setLang(switchedLang)
 
 	return (
-		<LanguageContext.Provider value={{ lang, switchedLang, setLang, handleLang }}>
+		<LanguageContext.Provider value={{ lang, switchedLang, contentLang, setLang, handleLang }}>
 			<Header />
 			<Projects />
 			<About />
