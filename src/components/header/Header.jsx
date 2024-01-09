@@ -26,9 +26,8 @@ const content = {
 }
 
 function Header() {
-	const { lang } = useContext(LanguageContext)
+	const { contentLang } = useContext(LanguageContext)
 
-	const contentLang = lang === "Castellano" ? "es" : "en"
 	const { nav, title, name, location } = content
 
 	return (
