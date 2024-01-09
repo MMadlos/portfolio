@@ -1,4 +1,5 @@
 import { copyEmail } from "../../utilities/copyEmail"
+import Dropdown from "./Dropdown"
 
 function Header() {
 	return (
@@ -15,6 +16,7 @@ function Header() {
 						<a href="#">About</a>
 					</li>
 				</ul>
+				<Dropdown />
 			</nav>
 
 			<div className="btm-container">
