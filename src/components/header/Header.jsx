@@ -1,7 +1,36 @@
 import { copyEmail } from "../../utilities/copyEmail"
+import { useContext } from "react"
+import { LanguageContext } from "../../App"
 import Dropdown from "./Dropdown"
 
+const content = {
+	nav: {
+		projects: {
+			en: "Projects",
+			es: "Proyectos",
+		},
+		about: {
+			en: "About",
+			es: "Sobre mi",
+		},
+	},
+	title: {
+		en: "Front End developer",
+		es: "Desarrollaor Front End",
+	},
+	name: "Michael Madlos",
+	location: {
+		en: "Barcelona, Spain",
+		es: "Barcelona, España",
+	},
+}
+
 function Header() {
+	const { lang } = useContext(LanguageContext)
+
+	const contentLang = lang === "Castellano" ? "es" : "en"
+	const { nav, title, name, location } = content
+
 	return (
 		<header>
 			<nav>
@@ -10,10 +39,10 @@ function Header() {
 				</a>
 				<ul>
 					<li>
-						<a href="#">Projects</a>
+						<a href="#">{nav.projects[contentLang]}</a>
 					</li>
 					<li>
-						<a href="#">About</a>
+						<a href="#">{nav.about[contentLang]}</a>
 					</li>
 					<li>
 						<Dropdown />
@@ -23,15 +52,12 @@ function Header() {
 
 			<div className="btm-container">
 				<div className="description">
-					<h1>
-						Front end <br />
-						developer
-					</h1>
+					<h1>{title[contentLang]}</h1>
 					<div className="name">
-						<h2>Michael Madlos</h2>
+						<h2>{name}</h2>
 						<p>
 							<i className="fa-solid fa-location-dot" />
-							Barcelona, Spain
+							{location[contentLang]}
 						</p>
 					</div>
 				</div>
