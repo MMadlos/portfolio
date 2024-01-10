@@ -548,10 +548,8 @@ section.about {
 					border-radius: 8px;
 					display: flex;
 					align-items: center;
-					justify-content: center;
 
-					> a {
-						line-height: 0;
+					& i {
 						font-size: 25px;
 					}
 
@@ -856,14 +854,20 @@ footer {
 .alert-copied {
 	font-size: 16px;
 	padding: 4px 16px;
+	border-radius: 8px;
 	background-color: white;
 	color: black;
 
 	position: absolute;
+	top: 0;
+	right: 0;
 
 	> p {
 		min-width: 15ch;
 		text-align: center;
+		color: var(--accent-blue);
+		font-weight: 500;
+		font-size: 14px;
 	}
 }
 
@@ -880,12 +884,12 @@ footer {
 
 @keyframes blur-in-expand {
 	0% {
-		transform: translate(calc(-100% + 25px), calc(-100% - 16px)) scale(0);
+		transform: scale(0);
 		filter: blur(12px);
 		opacity: 0;
 	}
 	100% {
-		transform: translate(calc(-100% + 25px), calc(-100% - 16px)) scale(1);
+		transform: translate(0, calc(-100% - 8px)) scale(1);
 		filter: blur(0);
 		opacity: 1;
 	}
