@@ -778,8 +778,7 @@ footer {
 		border-radius: 4px;
 
 		&:hover {
-			background-color: var(--text-grey);
-			color: var(--text-white);
+			color: var(--accent-blue);
 		}
 	}
 
@@ -797,6 +796,24 @@ footer {
 		button {
 			position: absolute;
 		}
+	}
+}
+
+.alert-fade-in {
+	animation: alert-fade-in 100ms linear both;
+}
+
+@keyframes alert-fade-in {
+	0% {
+		transform: translateY(-10%);
+		filter: blur(12px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(0);
 	}
 }
 
