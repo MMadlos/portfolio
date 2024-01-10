@@ -52,7 +52,7 @@ const content = {
 	},
 	description: {
 		en: "My most complete use of React. It includes React Router, React Testing library and the API is from fakestore.com",
-		es: "Proyecto en el que recopila todo lo aprendido de React. Incluye el uso de React Router, React Testing Library y la API es de fakestore.com.",
+		es: "Tienda online ficticia que recopila todo lo aprendido de React. Incluye el uso de React Router y React Testing Library. La API es de fakestore.com.",
 	},
 }
 
