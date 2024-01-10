@@ -860,7 +860,7 @@ footer {
 
 /* ALERT - COPIED EMAIL */
 
-.social-media-container > :last-child {
+.social-media-container {
 	position: relative;
 }
 
@@ -871,7 +871,7 @@ footer {
 .alert-copied {
 	font-size: 16px;
 	padding: 4px 16px;
-	border-radius: 8px;
+	border-radius: 4px;
 	background-color: white;
 	color: black;
 
@@ -906,7 +906,7 @@ footer {
 		opacity: 0;
 	}
 	100% {
-		transform: translate(0, calc(-100% - 8px)) scale(1);
+		transform: translate(0, calc(-100% - 4px)) scale(1);
 		filter: blur(0);
 		opacity: 1;
 	}

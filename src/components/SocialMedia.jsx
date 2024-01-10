@@ -30,12 +30,12 @@ function SocialMedia() {
 				</a>
 			</div>
 			<div className="social-media-icon">
-				{alert && <CopyNotification />}
 				<i
 					className="fa-solid fa-envelope"
 					onClick={toggleNotification}
 				/>
 			</div>
+			{alert && <CopyNotification />}
 		</div>
 	)
 }
