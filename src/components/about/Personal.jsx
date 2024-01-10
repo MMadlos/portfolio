@@ -44,7 +44,7 @@ function Personal() {
 					<a>
 						<i
 							className="fa-solid fa-envelope"
-							onClick={copyEmail}
+							onClick={() => copyEmail(contentLang)}
 						/>
 					</a>
 				</div>
