@@ -81,7 +81,7 @@ function Header() {
 					<div className="social-media-icon">
 						<i
 							className="fa-solid fa-envelope"
-							onClick={copyEmail}
+							onClick={() => copyEmail(contentLang)}
 						/>
 					</div>
 				</div>
