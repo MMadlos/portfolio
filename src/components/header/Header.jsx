@@ -1,7 +1,8 @@
 import { copyEmail } from "../../utilities/copyEmail"
-import { useContext } from "react"
+import { useState, useContext } from "react"
 import { LanguageContext } from "../../App"
 import Dropdown from "./Dropdown"
+import CopyNotification from "../CopyNotification"
 
 const content = {
 	nav: {
@@ -27,6 +28,13 @@ const content = {
 
 function Header() {
 	const { contentLang } = useContext(LanguageContext)
+	const [alert, setAlert] = useState(false)
+
+	function toggleNotification() {
+		copyEmail(contentLang)
+		setAlert(true)
+		setTimeout(setAlert, 3000, false)
+	}
 
 	const { nav, title, name, location } = content
 
@@ -79,9 +87,10 @@ function Header() {
 						</a>
 					</div>
 					<div className="social-media-icon">
+						{alert && <CopyNotification lang={contentLang} />}
 						<i
 							className="fa-solid fa-envelope"
-							onClick={() => copyEmail(contentLang)}
+							onClick={toggleNotification}
 						/>
 					</div>
 				</div>
