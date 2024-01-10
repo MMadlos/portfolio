@@ -15,7 +15,10 @@ export const LanguageContext = createContext({
 })
 
 function App() {
-	const [lang, setLang] = useState("Castellano")
+	const browserLang = navigator.language
+	const langTag = browserLang.includes("es") ? "Castellano" : "English"
+
+	const [lang, setLang] = useState(langTag)
 
 	const contentLang = lang === "Castellano" ? "es" : "en"
 	const switchedLang = lang === "Castellano" ? "English" : "Castellano"
