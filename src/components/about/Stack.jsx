@@ -1,4 +1,6 @@
 import { stackLogos } from "./stackLogos"
+import { useContext } from "react"
+import { LanguageContext } from "../../App"
 
 function StackGroup({ name, children }) {
 	return (
@@ -23,39 +25,68 @@ function StackElement({ source }) {
 	)
 }
 
+const content = {
+	title: {
+		en: "My stack",
+		es: "Mi stack",
+	},
+	languages: {
+		en: "Programming languages",
+		es: "Lenguajes de programación",
+	},
+	libraries: {
+		en: "Libraries and frameworks",
+		es: "Librerías y frameworks",
+	},
+	test: {
+		en: "Test",
+		es: "Test",
+	},
+	tools: {
+		en: "Dev tools",
+		es: "Herramientas de desarrollo",
+	},
+	design: {
+		en: "Design",
+		es: "Diseño",
+	},
+}
+
 function Stack() {
 	const { js, html, css, react, react_router, git, github, vite, webpack, vitest, jest, rtl, figma } = stackLogos
 
+	const { contentLang } = useContext(LanguageContext)
+
 	return (
 		<section className="about-content">
-			<h2>My stack</h2>
+			<h2>{content.title[contentLang]}</h2>
 
 			<div className="groups-container">
-				<StackGroup name="Programming languages">
+				<StackGroup name={content.languages[contentLang]}>
 					<StackElement source={js} />
 					<StackElement source={html} />
 					<StackElement source={css} />
 				</StackGroup>
 
-				<StackGroup name="Libraries and Frameworks">
+				<StackGroup name={content.libraries[contentLang]}>
 					<StackElement source={react} />
 					<StackElement source={react_router} />
 				</StackGroup>
 
-				<StackGroup name="Test">
+				<StackGroup name={content.test[contentLang]}>
 					<StackElement source={vitest} />
 					<StackElement source={jest} />
 					<StackElement source={rtl} />
 				</StackGroup>
 
-				<StackGroup name="Dev tools">
+				<StackGroup name={content.tools[contentLang]}>
 					<StackElement source={git} />
 					<StackElement source={github} />
 					<StackElement source={vite} />
 					<StackElement source={webpack} />
 				</StackGroup>
 
-				<StackGroup name="Design">
+				<StackGroup name={content.design[contentLang]}>
 					<StackElement source={figma} />
 				</StackGroup>
 			</div>
