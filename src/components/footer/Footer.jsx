@@ -1,6 +1,10 @@
 import { copyEmail } from "../../utilities/copyEmail"
+import { useContext } from "react"
+import { LanguageContext } from "../../App"
 
 function Footer() {
+	const { contentLang } = useContext(LanguageContext)
+
 	return (
 		<footer>
 			<a
@@ -18,7 +22,7 @@ function Footer() {
 						<p>Barcelona, Spain</p>
 						<div
 							className="copy-email"
-							onClick={copyEmail}>
+							onClick={() => copyEmail(contentLang)}>
 							<p className="email">MichaelMadlos@gmail.com</p>
 							<i className="fa-solid fa-copy"></i>
 						</div>
