@@ -1,6 +1,6 @@
 import Buttons from "./Buttons"
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, lang = "en" }) {
 	const { title, description, src, alt, website, github } = project
 	return (
 		<div className="project">
@@ -9,8 +9,8 @@ function ProjectCard({ project }) {
 				alt={alt}
 			/>
 			<div className="content">
-				<h2>{title}</h2>
-				<p>{description}</p>
+				<h2>{title[lang]}</h2>
+				<p>{description[lang]}</p>
 			</div>
 			<Buttons
 				website={website}
