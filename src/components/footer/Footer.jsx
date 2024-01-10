@@ -2,8 +2,31 @@ import { copyEmail } from "../../utilities/copyEmail"
 import { useContext } from "react"
 import { LanguageContext } from "../../App"
 
+const content = {
+	nav: {
+		projects: {
+			en: "Projects",
+			es: "Proyectos",
+		},
+		about: {
+			en: "About",
+			es: "Sobre mi",
+		},
+	},
+	title: {
+		en: "Front End developer",
+		es: "Desarrollador Front End",
+	},
+	name: "Michael Madlos",
+	location: {
+		en: "Barcelona, Spain",
+		es: "Barcelona, España",
+	},
+}
+
 function Footer() {
 	const { contentLang } = useContext(LanguageContext)
+	const { nav, title, name, location } = content
 
 	return (
 		<footer>
@@ -15,11 +38,14 @@ function Footer() {
 			<div className="btm">
 				<div className="btm-left">
 					<div className="title-container">
-						<h1>Front end Developer</h1>
-						<h2>Michael Madlos</h2>
+						<h1>{title[contentLang]}</h1>
+						<h2>{name}</h2>
 					</div>
 					<div className="contact-container">
-						<p>Barcelona, Spain</p>
+						<p className="location">
+							<i className="fa-solid fa-location-dot" />
+							{location[contentLang]}
+						</p>
 						<div
 							className="copy-email"
 							onClick={() => copyEmail(contentLang)}>
@@ -30,10 +56,10 @@ function Footer() {
 					<nav>
 						<ul>
 							<li>
-								<a href="#">Projects</a>
+								<a href="#">{nav.projects[contentLang]}</a>
 							</li>
 							<li>
-								<a href="#">About</a>
+								<a href="#">{nav.about[contentLang]}</a>
 							</li>
 						</ul>
 					</nav>

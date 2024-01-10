@@ -693,6 +693,13 @@ footer {
 				font-size: 12px;
 				font-weight: 500;
 
+				.location {
+					> i {
+						margin-right: 8px;
+						color: var(--text-grey);
+					}
+				}
+
 				.copy-email {
 					display: flex;
 					flex-direction: row;
@@ -740,21 +747,20 @@ footer {
 			font-family: var(--font-accent);
 			font-size: 12px;
 			font-weight: 700;
-			text-align: right;
 
 			display: flex;
 			justify-content: space-between;
+			align-items: end;
 			flex-direction: column;
 			min-width: fit-content;
-			gap: 8px;
+			gap: 12px;
 
 			> a:hover {
 				opacity: 0.5;
 			}
 
 			@media (max-width: 900px) {
-				text-align: left;
-				gap: 12px;
+				align-items: start;
 			}
 		}
 	}
