@@ -16,7 +16,7 @@ const content = {
 	},
 	title: {
 		en: "Front End developer",
-		es: "Desarrollaor Front End",
+		es: "Desarrollador Front End",
 	},
 	name: "Michael Madlos",
 	location: {
