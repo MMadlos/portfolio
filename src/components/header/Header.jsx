@@ -1,8 +1,7 @@
-import { copyEmail } from "../../utilities/copyEmail"
-import { useState, useContext } from "react"
+import { useContext } from "react"
 import { LanguageContext } from "../../App"
 import Dropdown from "./Dropdown"
-import CopyNotification from "../CopyNotification"
+import SocialMedia from "../SocialMedia"
 
 const content = {
 	nav: {
@@ -28,13 +27,6 @@ const content = {
 
 function Header() {
 	const { contentLang } = useContext(LanguageContext)
-	const [alert, setAlert] = useState(false)
-
-	function toggleNotification() {
-		copyEmail(contentLang)
-		setAlert(true)
-		setTimeout(setAlert, 3000, false)
-	}
 
 	const { nav, title, name, location } = content
 
@@ -69,31 +61,7 @@ function Header() {
 					</div>
 				</div>
 
-				<div className="social-media-container">
-					<div className="social-media-icon">
-						<a
-							href="https://github.com/MMadlos"
-							target="_blank"
-							rel="noreferrer noopener">
-							<i className="fa-brands fa-github" />
-						</a>
-					</div>
-					<div className="social-media-icon">
-						<a
-							href="https://www.linkedin.com/in/michaelmadlos/"
-							target="_blank"
-							rel="noreferrer noopener">
-							<i className="fa-brands fa-linkedin" />
-						</a>
-					</div>
-					<div className="social-media-icon">
-						{alert && <CopyNotification lang={contentLang} />}
-						<i
-							className="fa-solid fa-envelope"
-							onClick={toggleNotification}
-						/>
-					</div>
-				</div>
+				<SocialMedia />
 			</div>
 		</header>
 	)
