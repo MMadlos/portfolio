@@ -1,7 +1,19 @@
 import AVATAR from "../../assets/avatar_test.jpg"
 import { copyEmail } from "../../utilities/copyEmail"
 
+import { useContext } from "react"
+import { LanguageContext } from "../../App"
+
+const content = {
+	description: {
+		en: "Self-taught Front-end developer with strong UX/UI skills. Love productivity apps.",
+		es: "Castellano - lorem",
+	},
+}
+
 function Personal() {
+	const { contentLang } = useContext(LanguageContext)
+
 	return (
 		<section className="about-content personal-info">
 			<img
@@ -14,9 +26,7 @@ function Personal() {
 				</h2>
 
 				<p>
-					<span>
-						<strong>Self-taught Front-end developer with strong UX/UI skills.</strong> <br /> Love productivity apps.
-					</span>
+					<span>{content.description[contentLang]}</span>
 				</p>
 			</div>
 			<div className="social-media-container scroll-reveal">
