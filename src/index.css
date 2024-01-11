@@ -55,3 +55,7 @@ ul,
 li {
 	list-style: none;
 }
+
+p {
+	text-wrap: pretty;
+}
