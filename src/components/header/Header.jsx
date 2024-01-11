@@ -51,13 +51,13 @@ function Header() {
 
 			<div className="btm-container">
 				<div className="description">
-					<h1>{title[contentLang]}</h1>
-					<div className="name">
-						<h2>{name}</h2>
-						<p>
+					<h1 className="title">{title[contentLang]}</h1>
+					<div className="personal-data-container">
+						<h2 className="name">{name}</h2>
+						<div className="location-container">
 							<i className="fa-solid fa-location-dot" />
-							{location[contentLang]}
-						</p>
+							<p>{location[contentLang]}</p>
+						</div>
 					</div>
 				</div>
 
