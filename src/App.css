@@ -426,19 +426,19 @@ section.more-projects {
 				border-radius: 4px;
 			}
 
-			.content {
+			.content-container {
 				display: flex;
 				flex-direction: column;
 				gap: 8px;
 
 				color: var(--text-black);
 
-				> h2 {
+				.project-title {
 					font-size: var(--font-size-18);
 					font-weight: 600;
 				}
 
-				> p {
+				.project-description {
 					font-weight: 400;
 					line-height: 150%;
 				}

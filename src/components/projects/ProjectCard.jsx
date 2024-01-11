@@ -3,20 +3,20 @@ import Buttons from "./Buttons"
 function ProjectCard({ project, lang = "en" }) {
 	const { title, description, src, alt, website, github } = project
 	return (
-		<div className="project">
+		<article className="project">
 			<img
 				src={src}
 				alt={alt}
 			/>
-			<div className="content">
-				<h2>{title[lang]}</h2>
-				<p>{description[lang]}</p>
+			<div className="content-container">
+				<h2 className="project-title">{title[lang]}</h2>
+				<p className="project-description">{description[lang]}</p>
 			</div>
 			<Buttons
 				website={website}
 				github={github}
 			/>
-		</div>
+		</article>
 	)
 }
 
