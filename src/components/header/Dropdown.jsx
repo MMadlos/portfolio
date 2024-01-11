@@ -18,12 +18,10 @@ function Dropdown() {
 			<button onClick={handleOpen}>
 				{lang} <i className={`fa-solid ${chevronDirection}`} />
 			</button>
-			<div
-				className={"dropdown-options"}
-				data-is-open={isOpen}>
+			<div className={"dropdown-options"}>
 				<button
 					onClick={isOpen ? switchLang : undefined}
-					className={isOpen ? "alert-fade-in" : undefined}>
+					className={isOpen ? "dropdown-fade-in" : "dropdown-fade-out"}>
 					{switchedLang}
 				</button>
 			</div>

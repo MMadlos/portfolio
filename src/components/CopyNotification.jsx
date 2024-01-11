@@ -10,7 +10,7 @@ function CopyNotification() {
 	const { contentLang } = useContext(LanguageContext)
 
 	return (
-		<div className="alert-copied blur-in-expand">
+		<div className="notification">
 			<p>{copyEmailText[contentLang]}</p>
 		</div>
 	)

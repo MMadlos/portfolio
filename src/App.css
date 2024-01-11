@@ -63,15 +63,21 @@ INDEX
 }
 
 /* SOCIAL MEDIA */
-.social-media-container {
-	display: flex;
-	gap: 40px;
+
+.btm-container > .social-media-container {
+	/* Only applies in the header and not the about section */
 
 	@media (max-width: 500px) {
 		flex-direction: column;
 		align-items: center;
 		gap: 24px;
 	}
+}
+
+.social-media-container {
+	display: flex;
+	gap: 40px;
+	position: relative;
 
 	.social-media-icon {
 		font-size: 25px;
@@ -85,6 +91,36 @@ INDEX
 			background-color: var(--bg-dark-hover);
 			cursor: pointer;
 		}
+	}
+
+	.notification {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 15ch;
+		padding: 4px 16px;
+		border-radius: 4px;
+
+		font-size: var(--font-size-14);
+		font-weight: 500;
+		text-align: center;
+		color: var(--accent-blue);
+		background-color: var(--bg-light-main);
+
+		animation: animation-notification 0.3s linear both;
+	}
+}
+
+@keyframes animation-notification {
+	0% {
+		transform: scale(0);
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, calc(-100% - 4px)) scale(1);
+		filter: blur(0);
+		opacity: 1;
 	}
 }
 
@@ -317,7 +353,7 @@ section.projects {
 
 	to {
 		opacity: 1;
-		scale: 110%;
+		scale: 100%;
 	}
 }
 
@@ -355,10 +391,32 @@ section.more-projects {
 		grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 		gap: 48px;
 
+		@media (min-width: 500px) {
+			view-timeline-name: --image;
+			view-timeline-axis: block;
+
+			animation-timeline: --image;
+			animation-name: show;
+
+			animation-range: entry 5% cover 50%;
+			animation-fill-mode: both;
+		}
+
 		.project {
 			display: flex;
 			flex-direction: column;
 			gap: 48px;
+
+			@media (max-width: 500px) {
+				view-timeline-name: --image;
+				view-timeline-axis: block;
+
+				animation-timeline: --image;
+				animation-name: show;
+
+				animation-range: entry 5% cover 50%;
+				animation-fill-mode: both;
+			}
 
 			> img {
 				border-radius: 4px;
@@ -492,6 +550,7 @@ section.about {
 				display: flex;
 				flex-direction: column;
 				gap: 24px;
+				color: var(--text-grey);
 
 				> h2 {
 					text-align: center;
@@ -503,7 +562,6 @@ section.about {
 
 				> p {
 					max-width: 57ch;
-					opacity: 0.5;
 					text-align: center;
 					font-size: var(--font-size-14);
 					font-weight: 500;
@@ -539,9 +597,12 @@ section.about {
 				}
 
 				.answer > p {
-					color: var(--text-grey);
+					color: var(--text-white);
 					font-weight: 400;
-					margin-bottom: 16px;
+					margin-bottom: 20px;
+					line-height: 160%;
+					letter-spacing: -0.5px;
+					opacity: 0.8;
 
 					> a {
 						color: inherit;
@@ -554,6 +615,15 @@ section.about {
 							color: var(--text-white);
 						}
 					}
+
+					view-timeline-name: --image;
+					view-timeline-axis: block;
+
+					animation-timeline: --image;
+					animation-name: show;
+
+					animation-range: entry 5% cover 50%;
+					animation-fill-mode: both;
 				}
 			}
 		}
@@ -715,45 +785,54 @@ footer {
 	.dropdown-options {
 		position: relative;
 
-		&[data-is-open="false"] {
-			opacity: 0;
-		}
-
-		&[data-is-open="true"] {
-			opacity: 1;
-		}
-
 		button {
 			position: absolute;
+
+			&.dropdown-fade-in {
+				animation: animation-fade-in 0.1s linear both;
+			}
+
+			&.dropdown-fade-out {
+				animation: animation-fade-out 0.1s linear both;
+			}
 		}
 	}
 }
 
-.alert-fade-in {
-	animation: alert-fade-in 100ms linear both;
-}
-
-@keyframes alert-fade-in {
+@keyframes animation-fade-in {
 	0% {
-		transform: translateY(-10%);
+		transform: translateY(-50%);
 		filter: blur(12px);
 		opacity: 0;
 	}
 
 	100% {
 		transform: translateY(0);
-		opacity: 1;
 		filter: blur(0);
+		opacity: 1;
+	}
+}
+
+@keyframes animation-fade-out {
+	0% {
+		transform: translateY(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(-50%);
+		filter: blur(12px);
+		opacity: 0;
 	}
 }
 
 /* TEXT REVEAL - ABOUT SECTION */
 .scroll-reveal > p {
-	opacity: 100% !important;
+	opacity: 1 !important;
 }
 
-.scroll-reveal span,
-.scroll-reveal.social-media-container > .social-media-icon > a > i {
+.scroll-reveal span {
 	color: hsl(0 0% 100% / 0.2);
 
 	background-clip: text;
@@ -775,64 +854,8 @@ footer {
 	animation-range-end: 50vh;
 }
 
-.scroll-reveal > .social-media-icon > a > i.fa-github,
-.scroll-reveal > .social-media-icon > a > i.fa-linkedin,
-.scroll-reveal > .social-media-icon > a > i.fa-envelope {
-	animation-range-start: 30vh;
-	animation-range-end: 36vh;
-}
-
 @keyframes scroll-reveal {
 	to {
 		background-size: 100% 100%;
-	}
-}
-
-/* ALERT - COPIED EMAIL */
-
-.social-media-container {
-	position: relative;
-}
-
-.social-media-icon:hover {
-	opacity: 1;
-}
-
-.alert-copied {
-	position: absolute;
-	top: 0;
-	right: 0;
-	min-width: 15ch;
-	padding: 4px 16px;
-	border-radius: 4px;
-
-	font-size: var(--font-size-14);
-	font-weight: 500;
-	text-align: center;
-	color: var(--accent-blue);
-	background-color: var(--bg-light-main);
-}
-
-/* ----------------------------------------------
-  Generated by AnimatiSS
-  Licensed under FreeBSD License
-  URL: https://xsgames.co/animatiss
-  Twitter: @xsgames_
----------------------------------------------- */
-
-.blur-in-expand {
-	animation: blur-in-expand 0.3s linear both;
-}
-
-@keyframes blur-in-expand {
-	0% {
-		transform: scale(0);
-		filter: blur(12px);
-		opacity: 0;
-	}
-	100% {
-		transform: translate(0, calc(-100% - 4px)) scale(1);
-		filter: blur(0);
-		opacity: 1;
 	}
 }
