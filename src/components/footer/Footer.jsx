@@ -1,6 +1,7 @@
 import { copyEmail } from "../../utilities/copyEmail"
-import { useContext } from "react"
+import { useState, useContext } from "react"
 import { LanguageContext } from "../../App"
+import CopyNotification from "../CopyNotification"
 
 const content = {
 	nav: {
@@ -26,6 +27,14 @@ const content = {
 
 function Footer() {
 	const { contentLang } = useContext(LanguageContext)
+	const [alert, setAlert] = useState(false)
+
+	function toggleNotification() {
+		copyEmail()
+		setAlert(true)
+		setTimeout(setAlert, 3000, false)
+	}
+
 	const { nav, title, name, location } = content
 
 	return (
@@ -48,11 +57,13 @@ function Footer() {
 						</p>
 						<div
 							className="copy-email"
-							onClick={() => copyEmail(contentLang)}>
+							onClick={toggleNotification}>
 							<p className="email">MichaelMadlos@gmail.com</p>
 							<i className="fa-solid fa-copy"></i>
+							{alert && <CopyNotification />}
 						</div>
 					</div>
+
 					<nav>
 						<ul>
 							<li>
