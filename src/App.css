@@ -91,6 +91,10 @@ INDEX
 			background-color: var(--bg-dark-hover);
 			cursor: pointer;
 		}
+
+		& a {
+			opacity: 1;
+		}
 	}
 }
 
