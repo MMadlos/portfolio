@@ -10,7 +10,7 @@ function QAContainer({ question, children }) {
 function QAListEN() {
 	return (
 		<>
-			<QAContainer question="¿Cómo aprendiste a programar?">
+			<QAContainer question="How did you learn Front End development">
 				<p>
 					In <a href="#">The Odin Project</a>. An online platform that teaches by explaining concepts and by providing resources as you progress the course,
 					rather than following a tutorial and copying the code.
@@ -20,7 +20,7 @@ function QAListEN() {
 					<strong>Full Stack JavaScript path</strong>.
 				</p>
 			</QAContainer>
-			<QAContainer question="¿Por qué quieres iniciarte en el mundo del desarrollo?">
+			<QAContainer question="Why do you want to get started as a Front End developer?">
 				<p>
 					I have always been passionate about technology and I have been curious about development for a long, long time. I did related things, but in the end I
 					put it off for various reasons. Thinking that I was not qualified because it was too difficult, or that it was too late for me, or that I could not
@@ -32,7 +32,7 @@ function QAListEN() {
 					stimulating and pushes me to keep learning. I love the feeling I get when I solve a problem and see that I get the result I was looking for.
 				</p>
 			</QAContainer>
-			<QAContainer question={"¿Cómo te visualizas profesionalmente a largo plazo?"}>
+			<QAContainer question={"How do you see yourself professionally in the long term?"}>
 				<p>
 					Right now I'm focused on (1) putting into practice what I have learnt and (2) learning new things by facing challenges that you mostly find at work.
 				</p>
