@@ -2,64 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-/* RESET */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* FIRACODE */
+@font-face {
+  font-family: "FiraCode";
+  src: url("src/assets/fonts/FiraCode/FiraCode-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  color: inherit;
+@font-face {
+  font-family: "FiraCode";
+  src: url("src/assets/fonts/FiraCode/FiraCode-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-html {
-  color-scheme: dark light;
+@font-face {
+  font-family: "FiraCode";
+  src: url("src/assets/fonts/FiraCode/FiraCode-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
-body {
-  min-height: 100vh;
-  min-width: 320px;
+/* INTER */
+@font-face {
+  font-family: "Inter";
+  src: url("src/assets/fonts/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
+@font-face {
+  font-family: "Inter";
+  src: url("src/assets/fonts/Inter/Inter-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* GENERIC */
-
-/* body {
-	display: flex;
-	place-items: center;
-} */
-
-#root {
-  width: 100%;
+/* GEIST */
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-UltraBlack.woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-a {
-  text-decoration: none;
-  line-height: 100%;
-  display: inline-block;
-
-  &:hover {
-    opacity: 0.5;
-    cursor: pointer;
-  }
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-Black.woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
-ul,
-li {
-  list-style: none;
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-p {
-  text-wrap: pretty;
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-SemiBold.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-Medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-Ligth.woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-UltraLight.woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("src/assets/fonts/Geist/Geist-Thin.woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
