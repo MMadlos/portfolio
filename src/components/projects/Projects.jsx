@@ -8,8 +8,9 @@ export default function Projects() {
           Featured projects
         </h2>
 
-        <div className="flex flex-col gap-20 py-10">
+        <div className="flex flex-col gap-20 py-10 ">
           <ProjectInfo name="Cronos" />
+          <ProjectInfo name="New long name project" />
           <ProjectInfo name="Oshop" />
         </div>
       </section>
@@ -19,20 +20,32 @@ export default function Projects() {
 
 function ProjectInfo({ name = "", src = IMGTest }) {
   return (
-    <article className="font-geist flex flex-col gap-8 ">
-      <div className="flex flex-col gap-2">
-        <h3 className="text-lg font-bold ">{name}</h3>
-        <p className="text-[#999999]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae
-          ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi
-          quas quam quidem iste itaque laborum minus quasi.
-        </p>
+    <article className="font-geist flex flex-col gap-8 sm:flex-row sm:gap-14">
+      <div className="flex flex-col gap-2 sm:max-w-[30%] sm:gap-8">
+        <div>
+          <h3 className="text-lg font-bold ">{name}</h3>
+          <p className="text-[#999999] mt-2 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            quae ducimus soluta expedita eos! Nemo quod tenetur voluptatibus
+            cum. Modi quas quam quidem iste itaque laborum minus quasi.
+          </p>
+        </div>
+        <div className="hidden sm:flex sm:flex-row sm:gap-6 sm:w-full font-fira text-sm font-medium ">
+          <button className="flex flex-row gap-2 items-center h-fit hover:bg-gradient-to-r hover:from-[#3604FF] hover:via-[#FF4D86] hover:to-[#FDB437] hover:text-transparent hover:bg-clip-text text-xs">
+            Website
+            <i className="fa-solid fa-arrow-up-right-from-square" />
+          </button>
+          <button className="flex flex-row gap-2 items-center h-fit hover:bg-gradient-to-r hover:from-[#3604FF] hover:via-[#FF4D86] hover:to-[#FDB437] hover:text-transparent hover:bg-clip-text text-xs">
+            Github
+            <i className="fa-solid fa-arrow-up-right-from-square" />
+          </button>
+        </div>
       </div>
-      <div className="bg-white w-full aspect-square rounded-2xl relative shadow-lg overflow-hidden">
+      <div className="bg-white w-full rounded-2xl shadow-lg overflow-hidden sm:max-h-[60vh] sm:shadow-md sm:rounded-md">
         <img src={src} alt="" className="w-full h-full object-cover" />
       </div>
 
-      <div className="flex flex-row gap-4 w-full font-fira text-sm font-semibold">
+      <div className="flex flex-row gap-4 w-full font-fira text-sm font-semibold sm:hidden">
         <button className="py-3 px-6 w-full text-white bg-black rounded-xl ">
           Website
         </button>
