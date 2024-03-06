@@ -1,38 +1,44 @@
+import IMGTest from "../../assets/avatar_test.jpg";
+
 export default function Projects() {
   return (
-    <main className="flex flex-col justify-between bg-[#F6F6F6] p-6 gap-8">
-      <h2 className="mt-[40px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text font-fira text-sm font-semibold w-fit">
-        Featured projects
-      </h2>
-      <div className="flex flex-col gap-20">
-        <ProjectInfo />
-        <ProjectInfo />
-      </div>
+    <main className="justify-between bg-[#F6F6F6] px-6 gap-8 sm:overflow-y-auto">
+      <section className="pt-10">
+        <h2 className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text font-fira text-sm font-semibold w-fit">
+          Featured projects
+        </h2>
+
+        <div className="flex flex-col gap-20 py-10">
+          <ProjectInfo name="Cronos" />
+          <ProjectInfo name="Oshop" />
+        </div>
+      </section>
     </main>
   );
 }
 
-function ProjectInfo() {
+function ProjectInfo({ name = "", src = IMGTest }) {
   return (
-    <article className="font-geist flex flex-col gap-2 ">
-      <h3 className="text-lg font-medium">Cronos</h3>
-      <p className="text-[#999999]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae
-        ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi
-        quas quam quidem iste itaque laborum minus quasi.
-      </p>
+    <article className="font-geist flex flex-col gap-8 ">
+      <div className="flex flex-col gap-2">
+        <h3 className="text-lg font-bold ">{name}</h3>
+        <p className="text-[#999999]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae
+          ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi
+          quas quam quidem iste itaque laborum minus quasi.
+        </p>
+      </div>
+      <div className="bg-white w-full aspect-square rounded-2xl relative shadow-lg overflow-hidden">
+        <img src={src} alt="" className="w-full h-full object-cover" />
+      </div>
 
-      <div className="bg-white w-full aspect-square rounded-2xl relative shadow-lg mt-8">
-        <img src="" alt="" />
-
-        <div className="absolute bottom-0 mb-4 flex flex-row gap-4 w-full px-2 font-fira text-sm font-semibold">
-          <button className="py-2 px-6 w-full text-[#FAFAFA] bg-black rounded-lg">
-            Github
-          </button>
-          <button className="py-2 px-6 w-full text-black bg-[#FAFAFA]  border-2 border-black rounded-lg">
-            Website
-          </button>
-        </div>
+      <div className="flex flex-row gap-4 w-full font-fira text-sm font-semibold">
+        <button className="py-3 px-6 w-full text-white bg-black rounded-xl ">
+          Website
+        </button>
+        <button className="py-3 px-6 w-full text-black rounded-xl border-2 border-black">
+          Github
+        </button>
       </div>
     </article>
   );
