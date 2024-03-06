@@ -2,7 +2,7 @@ import Avatar from "../../assets/avatar.png";
 
 export default function About() {
   return (
-    <section className="h-dvh w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437]">
+    <section className="h-[80dvh] w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437]">
       <div className="flex flex-col justify-between h-full bg-black p-6">
         <h1 className="font-fira text-[#999999] text-sm font-semibold">
           Michael Madlos
@@ -11,11 +11,11 @@ export default function About() {
         <div className="flex flex-col gap-10">
           <div
             id="header-container"
-            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-medium items-center max-w-[370px]"
+            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-bold items-center max-w-[370px] tracking-tight"
           >
             <div className="">I'm</div>
             <div>a</div>
-            <div className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap font-semibold">
+            <div className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap ">
               front-end
             </div>
 
@@ -28,7 +28,7 @@ export default function About() {
             </div>
             <div>developer</div>
           </div>
-          <p className="text-[#999999] font-geist leading-7 text-lg">
+          <p className="text-[#aaaaaa] font-geist font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida
             eleifend urna nec molestie. Cras non sem sodales velit dictum
             molestie.
@@ -41,7 +41,7 @@ export default function About() {
               LinkedIn
             </span>
           </button>
-          <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-4 w-full bg-[#2e2e2e]">
+          <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-4 w-full bg-[#222222]">
             Github
           </button>
         </div>
