@@ -4,22 +4,22 @@ export default function About() {
   return (
     <section className="h-dvh w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437]">
       <div className="flex flex-col justify-between h-full bg-black p-6">
-        <h1 className="font-fira text-[#999999] text-sm font-medium">
+        <h1 className="font-fira text-[#999999] text-sm font-semibold">
           Michael Madlos
         </h1>
 
         <div className="flex flex-col gap-10">
           <div
             id="header-container"
-            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-medium items-center"
+            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-medium items-center max-w-[370px]"
           >
             <div className="">I'm</div>
             <div>a</div>
-            <div className="bg-gradient-to-br from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap font-bold">
+            <div className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap font-semibold">
               front-end
             </div>
 
-            <div className="relative w-[100px] h-[40px] inline-block bg-gradient-to-br from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-full">
+            <div className="relative w-[100px] h-[40px] inline-block bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-full">
               <img
                 src={Avatar}
                 alt=""
