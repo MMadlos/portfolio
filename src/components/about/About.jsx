@@ -2,16 +2,16 @@ import Avatar from "../../assets/avatar.png";
 
 export default function About() {
   return (
-    <section className="h-[80dvh] w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437]">
-      <div className="flex flex-col justify-between h-full bg-black p-6">
+    <section className="h-[80dvh] w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] sm:h-full sm:pb-0 sm:pr-[4px] sm:bg-gradient-to-b sm:max-w-[550px] ">
+      <div className="flex flex-col justify-between h-full bg-black p-6 ">
         <h1 className="font-fira text-[#999999] text-sm font-semibold">
           Michael Madlos
         </h1>
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 sm:h-full sm:justify-center">
           <div
             id="header-container"
-            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-bold items-center max-w-[370px] tracking-tight"
+            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-bold items-center max-w-[360px] tracking-tight"
           >
             <div className="">I'm</div>
             <div>a</div>
@@ -28,20 +28,30 @@ export default function About() {
             </div>
             <div>developer</div>
           </div>
-          <p className="text-[#aaaaaa] font-geist font-medium">
+          <p className="text-[#aaaaaa] font-geist font-medium ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida
             eleifend urna nec molestie. Cras non sem sodales velit dictum
             molestie.
           </p>
+          <div className="hidden sm:flex-row gap-4 sm:flex">
+            <button className="p-[2px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-lg group">
+              <span className="bg-black block py-3 text-sm rounded-lg px-6 font-fira text-[#FAFAFA] font-semibold group-hover:bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437]">
+                LinkedIn
+              </span>
+            </button>
+            <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-3 bg-[#222222] px-6 hover:bg-[#333]">
+              Github
+            </button>
+          </div>
         </div>
 
-        <div className="flex flex-col gap-4">
-          <button className="font-fira text-[#FAFAFA] font-semibold p-[2px] w-full bg-clip-border bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-lg ">
-            <span className="bg-black block py-4 text-sm rounded-lg ">
+        <div className="flex flex-col gap-4 sm:flex-row sm:hidden">
+          <button className="font-fira text-[#FAFAFA] font-semibold p-[2px] w-full bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-lg h-fit">
+            <span className="bg-black block py-4 text-sm rounded-lg sm:py-3">
               LinkedIn
             </span>
           </button>
-          <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-4 w-full bg-[#222222]">
+          <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-4 w-full bg-[#222222] grow-0  h-fit sm:py-3">
             Github
           </button>
         </div>

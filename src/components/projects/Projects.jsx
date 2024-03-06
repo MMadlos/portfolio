@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <section className="flex flex-col justify-between bg-[#F6F6F6] p-6 gap-8">
+    <main className="flex flex-col justify-between bg-[#F6F6F6] p-6 gap-8">
       <h2 className="mt-[40px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text font-fira text-sm font-semibold w-fit">
         Featured projects
       </h2>
@@ -8,7 +8,7 @@ export default function Projects() {
         <ProjectInfo />
         <ProjectInfo />
       </div>
-    </section>
+    </main>
   );
 }
 

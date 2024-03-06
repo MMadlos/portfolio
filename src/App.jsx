@@ -5,10 +5,10 @@ import Projects from "./components/projects/Projects";
 
 function App() {
   return (
-    <>
+    <div className="sm:flex sm:flex-row sm:h-dvh sm:overflow-y-hidden">
       <About />
       <Projects />
-    </>
+    </div>
   );
 }
 
