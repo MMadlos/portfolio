@@ -8,7 +8,7 @@ export default function Nav() {
         </span>
       </button>
       <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-3 bg-[#222222] px-6 hover:bg-[#333]">
-        Github
+        GitHub
         <i className="fa-solid fa-arrow-right -rotate-45 ml-2" />
       </button>
     </nav>

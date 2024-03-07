@@ -5,7 +5,7 @@ export const stackLabels = [
   { name: "CSS", src: "src/assets/logos/logo_css.png" },
   { name: "React Router", src: "src/assets/logos/logo_react_router.png" },
   { name: "Git", src: "src/assets/logos/logo_git.png" },
-  { name: "Github", src: "src/assets/logos/logo_github.png" },
+  { name: "GitHub", src: "src/assets/logos/logo_github.png" },
   { name: "Vite", src: "src/assets/logos/logo_vite.png" },
   { name: "Webpack", src: "src/assets/logos/logo_webpack.png" },
   { name: "Vitest", src: "src/assets/logos/logo_vitest.png" },
