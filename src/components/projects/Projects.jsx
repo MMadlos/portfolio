@@ -32,16 +32,18 @@ function ProjectInfo({
   hrefGithub = "#",
 }) {
   return (
-    <article className="font-geist flex flex-col gap-6 sm:flex-row sm:gap-14">
-      <div>
+    <article className="font-geist flex flex-col gap-6 sm:flex-row sm:gap-24">
+      <div className="sm:max-w-[25%]">
         <h3 className="text-lg font-semibold ">{name}</h3>
-        <div className="hidden sm:flex sm:flex-col gap-6 sm:mt-6">
+        <div className="hidden sm:flex sm:flex-col gap-6 sm:mt-4">
           <ProjectDescription />
         </div>
       </div>
       <div className="bg-white w-full rounded-md shadow-md overflow-hidden sm:max-h-[60vh] ">
         <img src={srcIMG} alt="" className="w-full object-cover aspect-auto" />
       </div>
+
+      {/* Only visible for xs screens */}
       <div className="sm:hidden flex flex-col gap-6">
         <ProjectDescription />
       </div>
@@ -49,7 +51,7 @@ function ProjectInfo({
   );
 }
 
-function ProjectDescription() {
+function ProjectDescription({ children }) {
   return (
     <>
       <p className="text-[#999] font-geist text-sm tracking-wide ">
@@ -57,7 +59,7 @@ function ProjectDescription() {
         ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi
         quas quam quidem iste itaque laborum minus quasi.
       </p>
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-row gap-6 sm:gap-4">
         <Link text="Website" light />
         <Link text="Github" light />
       </div>
