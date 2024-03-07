@@ -16,8 +16,8 @@ export default function About() {
             id="header-container"
             className="text-6xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-x-3  font-extrabold items-center max-w-[360px] tracking-tight leading-12"
           >
-            <div className="">I'm</div>
-            <div>a</div>
+            <span className="">I'm</span>
+            <span>a</span>
             <div className="relative w-[100px] h-[40px] inline-block bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-full">
               <img
                 src={Avatar}
@@ -25,9 +25,9 @@ export default function About() {
                 className="object-cover h-[70px] w-full object-top absolute bottom-0 -scale-x-100 sm:scale-x-100"
               />
             </div>
-            <div className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap ">
+            <span className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap ">
               front-end
-            </div>
+            </span>
 
             <div>developer</div>
           </div>
