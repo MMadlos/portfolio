@@ -3,12 +3,12 @@ import Nav from "./Nav";
 
 export default function About() {
   return (
-    <section className="w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] sm:h-full sm:pb-0 sm:pr-[4px] sm:bg-gradient-to-b sm:max-w-[550px] flex">
-      <div className="flex flex-col gap-20 bg-black p-6 pb-20 grow sm:gap-4 ">
+    <section className="w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] sm:h-full sm:pb-0 sm:pr-[6px] sm:bg-gradient-to-b sm:max-w-[500px] flex">
+      <div className="flex flex-col gap-20 bg-black p-6 pb-20 grow ">
         <Nav />
 
         <div>
-          <h1 className="font-fira text-[#999999] text-sm font-medium">
+          <h1 className="font-fira text-[#999999] text-sm font-semibold">
             Michael Madlos
           </h1>
           <div
@@ -32,17 +32,6 @@ export default function About() {
           </div>
         </div>
         <Stack />
-
-        {/* <div className="flex flex-col gap-4 sm:flex-row sm:hidden">
-          <button className="font-fira text-[#FAFAFA] font-semibold p-[2px] w-full bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-lg h-fit">
-            <span className="bg-black block py-4 text-sm rounded-lg sm:py-3">
-              LinkedIn
-            </span>
-          </button>
-          <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-4 w-full bg-[#222222] grow-0  h-fit sm:py-3">
-            Github
-          </button>
-        </div> */}
       </div>
     </section>
   );
