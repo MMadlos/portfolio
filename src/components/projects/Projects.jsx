@@ -31,13 +31,13 @@ function ProjectInfo({ name = "", src = IMGTest }) {
           </p>
         </div>
         <div className="hidden sm:flex sm:flex-row sm:gap-6 sm:w-full font-fira text-sm font-medium ">
-          <button className="flex flex-row gap-2 items-center h-fit hover:bg-gradient-to-r hover:from-[#3604FF] hover:via-[#FF4D86] hover:to-[#FDB437] hover:text-transparent hover:bg-clip-text text-xs">
+          <button className="group flex flex-row gap-2 items-center h-fit hover:bg-gradient-to-r hover:from-[#3604FF] hover:via-[#FF4D86] hover:to-[#FDB437] hover:text-transparent hover:bg-clip-text text-xs">
             Website
-            <i className="fa-solid fa-arrow-up-right-from-square" />
+            <i className="fa-solid fa-arrow-right -rotate-45 group-hover:text-[#FDB437]" />
           </button>
-          <button className="flex flex-row gap-2 items-center h-fit hover:bg-gradient-to-r hover:from-[#3604FF] hover:via-[#FF4D86] hover:to-[#FDB437] hover:text-transparent hover:bg-clip-text text-xs">
+          <button className="group flex flex-row gap-2 items-center h-fit hover:bg-gradient-to-r hover:from-[#3604FF] hover:via-[#FF4D86] hover:to-[#FDB437] hover:text-transparent hover:bg-clip-text text-xs">
             Github
-            <i className="fa-solid fa-arrow-up-right-from-square" />
+            <i className="fa-solid fa-arrow-right -rotate-45 group-hover:text-[#FDB437]" />
           </button>
         </div>
       </div>
