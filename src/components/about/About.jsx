@@ -1,56 +1,39 @@
 import Avatar from "../../assets/avatar.png";
+import Nav from "./Nav";
 
 export default function About() {
   return (
-    <section className="h-[80dvh] w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] sm:h-full sm:pb-0 sm:pr-[4px] sm:bg-gradient-to-b sm:max-w-[550px] ">
-      <div className="flex flex-col justify-between h-full bg-black p-6 ">
-        <h1 className="font-fira text-[#999999] text-sm font-semibold">
-          Michael Madlos
-        </h1>
+    <section className="w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] sm:h-full sm:pb-0 sm:pr-[4px] sm:bg-gradient-to-b sm:max-w-[550px] flex">
+      <div className="flex flex-col gap-20 bg-black p-6 pb-20 grow sm:gap-4 ">
+        <Nav />
 
-        <div className="flex flex-col gap-10 sm:h-full sm:justify-center">
+        <div>
+          <h1 className="font-fira text-[#999999] text-sm font-medium">
+            Michael Madlos
+          </h1>
           <div
             id="header-container"
-            className="text-4xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-3 font-bold items-center max-w-[360px] tracking-tight"
+            className="text-6xl  text-[#FAFAFA] font-geist flex flex-row flex-wrap gap-x-3  font-extrabold items-center max-w-[360px] tracking-tight leading-12"
           >
             <div className="">I'm</div>
             <div>a</div>
-            <div className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap ">
-              front-end
-            </div>
-
             <div className="relative w-[100px] h-[40px] inline-block bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-full">
               <img
                 src={Avatar}
                 alt=""
-                className="object-cover h-[70px] w-full object-top absolute bottom-0"
+                className="object-cover h-[70px] w-full object-top absolute bottom-0 -scale-x-100 sm:scale-x-100"
               />
             </div>
+            <div className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text inline-block text-nowrap ">
+              front-end
+            </div>
+
             <div>developer</div>
           </div>
-          <p className="text-[#aaaaaa] font-geist font-medium ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida
-            eleifend urna nec molestie. Cras non sem sodales velit dictum
-            molestie.
-          </p>
-
-          <Stack />
-
-          <div className="hidden sm:flex-row gap-4 sm:flex">
-            <button className="p-[2px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-lg group">
-              <span className="bg-black block py-3 text-sm rounded-lg px-6 font-fira text-[#FAFAFA] font-semibold group-hover:bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437]">
-                LinkedIn
-                <i className="fa-solid fa-arrow-right -rotate-45 ml-2" />
-              </span>
-            </button>
-            <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-3 bg-[#222222] px-6 hover:bg-[#333]">
-              Github
-              <i className="fa-solid fa-arrow-right -rotate-45 ml-2" />
-            </button>
-          </div>
         </div>
+        <Stack />
 
-        <div className="flex flex-col gap-4 sm:flex-row sm:hidden">
+        {/* <div className="flex flex-col gap-4 sm:flex-row sm:hidden">
           <button className="font-fira text-[#FAFAFA] font-semibold p-[2px] w-full bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] rounded-lg h-fit">
             <span className="bg-black block py-4 text-sm rounded-lg sm:py-3">
               LinkedIn
@@ -59,7 +42,7 @@ export default function About() {
           <button className="font-fira font-semibold text-[#FAFAFA] rounded-lg text-sm py-4 w-full bg-[#222222] grow-0  h-fit sm:py-3">
             Github
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
@@ -95,13 +78,15 @@ function Stack() {
 
 function Tag({ text = "", srcLogo }) {
   return (
-    <div className="bg-[#222222] w-fit rounded-full px-4 py-2 flex flex-row gap-2 justify-center items-center">
+    <div className="bg-[#292929] w-fit rounded-full px-4 py-2 flex flex-row gap-2 justify-center items-center">
       <img
         src={srcLogo}
         alt=""
         className="size-4 aspect-square object-contain"
       />
-      <p className="text-[#aaaaaa] font-medium text-xs font-geist">{text}</p>
+      <p className="text-[#CCC] font-medium text-sm font-geist tracking-wide">
+        {text}
+      </p>
     </div>
   );
 }
