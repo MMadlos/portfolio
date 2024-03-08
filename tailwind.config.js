@@ -6,7 +6,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      fira: ["FiraCode", ...defaultTheme.fontFamily.sans],
+      fira: ["Fira Code", ...defaultTheme.fontFamily.sans],
       inter: ["Inter", ...defaultTheme.fontFamily.sans],
       geist: ["Geist", ...defaultTheme.fontFamily.sans],
     },
