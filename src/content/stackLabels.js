@@ -1,16 +1,16 @@
 import JS_LOGO from "../assets/logos/logo_js.png";
 import REACT_LOGO from "../assets/logos/logo_react.png";
 import HTML_LOGO from "../assets/logos/logo_html.png";
-import CSS_LOGO from "src/assets/logos/logo_css.png";
-import RR_LOGO from "src/assets/logos/logo_react_router.png";
-import GIT_LOGO from "src/assets/logos/logo_git.png";
-import GITHUB_LOGO from "src/assets/logos/logo_github.png";
-import VITE_LOGO from "src/assets/logos/logo_vite.png";
-import WEBPACK_LOGO from "src/assets/logos/logo_webpack.png";
-import VITEST_LOGO from "src/assets/logos/logo_vitest.png";
-import JEST_LOGO from "src/assets/logos/logo_jest.png";
-import RTL_LOGO from "src/assets/logos/logo_RTL.png";
-import FIGMA_LOGO from "src/assets/logos/logo_figma.png";
+import CSS_LOGO from "../assets/logos/logo_css.png";
+import RR_LOGO from "../assets/logos/logo_react_router.png";
+import GIT_LOGO from "../assets/logos/logo_git.png";
+import GITHUB_LOGO from "../assets/logos/logo_github.png";
+import VITE_LOGO from "../assets/logos/logo_vite.png";
+import WEBPACK_LOGO from "../assets/logos/logo_webpack.png";
+import VITEST_LOGO from "../assets/logos/logo_vitest.png";
+import JEST_LOGO from "../assets/logos/logo_jest.png";
+import RTL_LOGO from "../assets/logos/logo_RTL.png";
+import FIGMA_LOGO from "../assets/logos/logo_figma.png";
 
 export const stackLabels = [
   { name: "Javascript", src: JS_LOGO },
