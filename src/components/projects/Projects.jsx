@@ -1,5 +1,7 @@
 import IMGTest from "../../assets/avatar_test.jpg";
 import Link from "../Link/Link";
+import { Fragment } from "react";
+import { projectsInfo } from "../../content/projectsInfo";
 
 export default function Projects() {
   return (
@@ -10,11 +12,24 @@ export default function Projects() {
         </h2>
 
         <div className="flex flex-col gap-20 py-10 ">
-          <ProjectInfo name="Cronos" />
-          <Divider />
-          <ProjectInfo name="New long name project" />
-          <Divider />
-          <ProjectInfo name="Oshop" />
+          {projectsInfo.map((projectData, index) => {
+            const { id, name, description, src, alt, hrefWeb, hrefGithub } =
+              projectData;
+
+            return (
+              <Fragment key={id}>
+                <ProjectInfo
+                  name={name}
+                  description={description}
+                  srcIMG={src}
+                  altIMG={alt}
+                  hrefWeb={hrefWeb}
+                  hrefGithub={hrefGithub}
+                />
+                {index !== projectsInfo.length - 1 && <Divider />}
+              </Fragment>
+            );
+          })}
         </div>
       </section>
     </main>
@@ -26,8 +41,10 @@ function Divider() {
 }
 
 function ProjectInfo({
-  name = "",
+  name,
+  description,
   srcIMG = IMGTest,
+  altIMG,
   hrefWeb = "#",
   hrefGithub = "#",
 }) {
@@ -36,32 +53,38 @@ function ProjectInfo({
       <div className="sm:max-w-[25%]">
         <h3 className="text-lg font-semibold ">{name}</h3>
         <div className="hidden sm:flex sm:flex-col gap-6 sm:mt-4">
-          <ProjectDescription />
+          <ProjectDescription
+            description={description}
+            hrefWeb={hrefWeb}
+            hrefGithub={hrefGithub}
+          />
         </div>
       </div>
       <div className="bg-white w-full rounded-md shadow-md overflow-hidden sm:max-h-[60vh] ">
-        <img src={srcIMG} alt="" className="w-full object-cover aspect-auto" />
+        <img src={srcIMG} alt={altIMG} className="w-full object-cover h-full" />
       </div>
 
       {/* Only visible for xs screens */}
       <div className="sm:hidden flex flex-col gap-6">
-        <ProjectDescription />
+        <ProjectDescription
+          description={description}
+          hrefWeb={hrefWeb}
+          hrefGithub={hrefGithub}
+        />
       </div>
     </article>
   );
 }
 
-function ProjectDescription({ children }) {
+function ProjectDescription({ description, hrefWeb, hrefGithub }) {
   return (
     <>
       <p className="text-[#999] font-geist text-sm tracking-wide ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae
-        ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi
-        quas quam quidem iste itaque laborum minus quasi.
+        {description}
       </p>
       <div className="flex flex-row gap-6 sm:gap-4">
-        <Link text="Website" light />
-        <Link text="Github" light />
+        <Link text="Website" href={hrefWeb} light />
+        <Link text="Github" href={hrefGithub} light />
       </div>
     </>
   );
