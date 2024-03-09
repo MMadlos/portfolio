@@ -5,12 +5,19 @@ export default function Link({ href = "#", text = "link text", light }) {
         <a
           href={href}
           className="h-full py-2 px-4 text-xs font-fira text-[#FAFAFA] font-semibold bg-[#333] flex flex-row gap-2 items-center justify-center rounded sm:hover:opacity-50"
+          referrerPolicy="no-referrer"
+          target="_blank"
         >
           {text}
           <i className="fa-solid fa-arrow-right -rotate-45 " />
         </a>
       ) : (
-        <a href={href} className="group">
+        <a
+          href={href}
+          className="group"
+          referrerPolicy="no-referrer"
+          target="_blank"
+        >
           <div className="h-full py-2 text-sm font-fira text-[#FAFAFA] sm:text-[#999] font-semibold group-hover:text-[#FAFAFA]">
             <span>{text}</span>
             <i className="fa-solid fa-arrow-right -rotate-45 ml-2" />
