@@ -1,4 +1,7 @@
 import IMGTest from "../assets/avatar_test.jpg";
+import OshopIMG from "../assets/oshop.jpg";
+import CronosIMG from "../assets/cronos.jpg";
+import PokememoryIMG from "../assets/pokememory.jpg";
 
 export const projectsInfo = [
   {
@@ -6,7 +9,7 @@ export const projectsInfo = [
     name: "Oshop",
     description:
       "Online shop simulator. SPA developed with React that includes tests with React Testing Library, routers with React Router and products from the Fake API Store.",
-    src: IMGTest,
+    src: OshopIMG,
     alt: "Image of the project",
     hrefWeb: "https://online-shop-brown-two.vercel.app/",
     hrefGithub: "https://github.com/MMadlos/online-shop",
@@ -16,7 +19,7 @@ export const projectsInfo = [
     name: "Cronos",
     description:
       "App to quickly check the most suitable date for an event for all (or most) participants. This project came to my mind when planning a bachelor party. We were a group of 6 discussing the best possible date for the event on WhatsApp and it soon became chaotic. So, I though, why not to do an app that makes this process easier.",
-    src: IMGTest,
+    src: CronosIMG,
     alt: "Image of the project",
     hrefWeb: "https://cronos-app.vercel.app/",
     hrefGithub: "https://github.com/MMadlos/cronos-app",
@@ -36,7 +39,7 @@ export const projectsInfo = [
     name: "Memory card game",
     description:
       "Another classic game developed with JavaScript. I’ve used the PokeApi for the images, 3 levels of difficulty and a score board with its current points and the maximum points achieved.",
-    src: IMGTest,
+    src: PokememoryIMG,
     alt: "Image of the project",
     hrefWeb: "https://memory-card-game-delta-one.vercel.app/",
     hrefGithub: "https://github.com/MMadlos/memory-card-game",
