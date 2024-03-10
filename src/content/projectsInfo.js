@@ -3,32 +3,39 @@ import IMGTest from "../assets/avatar_test.jpg";
 export const projectsInfo = [
   {
     id: 1,
-    name: "Cronos",
+    name: "Oshop",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi quas quam quidem iste itaque laborum minus quasi.",
+      "Online shop simulation. Developed with React and tested with React Testing Library.",
     src: IMGTest,
     alt: "Image of the project",
-    hrefWeb: "#",
-    hrefGithub: "#",
+    hrefWeb: "https://online-shop-brown-two.vercel.app/",
+    hrefGithub: "https://github.com/MMadlos/online-shop",
   },
   {
     id: 2,
-    name: "New long name project",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi quas quam quidem iste itaque laborum minus quasi.",
+    name: "Cronos",
+    description: "APP to manage dates in group. Developed with React.",
     src: IMGTest,
     alt: "Image of the project",
-    hrefWeb: "#",
-    hrefGithub: "#",
+    hrefWeb: "https://cronos-app.vercel.app/",
+    hrefGithub: "https://github.com/MMadlos/cronos-app",
   },
   {
     id: 3,
-    name: "Oshop",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae ducimus soluta expedita eos! Nemo quod tenetur voluptatibus cum. Modi quas quam quidem iste itaque laborum minus quasi.",
+    name: "Battleship game",
+    description: "Classic game developed with Javascript.",
     src: IMGTest,
     alt: "Image of the project",
     hrefWeb: "#",
-    hrefGithub: "#",
+    hrefGithub: "https://github.com/MMadlos/battleship-game",
+  },
+  {
+    id: 4,
+    name: "Memory Card game with PokeAPI",
+    description: "Classic game developed with Javascript.",
+    src: IMGTest,
+    alt: "Image of the project",
+    hrefWeb: "https://memory-card-game-delta-one.vercel.app/",
+    hrefGithub: "https://github.com/MMadlos/memory-card-game",
   },
 ];
