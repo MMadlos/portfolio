@@ -5,7 +5,7 @@ import { projectsInfo } from "../../content/projectsInfo";
 
 export default function Projects() {
   return (
-    <main className="justify-between bg-[#F6F6F6] px-6 gap-8 sm:overflow-y-auto">
+    <main className="justify-between bg-[#F6F6F6] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] px-6 gap-8 sm:overflow-y-auto">
       <section className="pt-10">
         <h2 className="bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] text-transparent bg-clip-text font-fira text-sm font-semibold w-fit">
           Featured projects

@@ -5,7 +5,7 @@ import Stack from "./Stack";
 export default function About() {
   return (
     <section className="w-dvw pb-[4px] bg-gradient-to-r from-[#3604FF] via-[#FF4D86] to-[#FDB437] sm:h-full sm:pb-0 sm:pr-[6px] sm:bg-gradient-to-b sm:max-w-[500px] flex">
-      <div className="flex flex-col gap-20 bg-black p-6 pb-20 grow ">
+      <div className="flex flex-col gap-20 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] p-6 pb-20 grow ">
         <Nav />
 
         <div>
