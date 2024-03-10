@@ -11,6 +11,7 @@ import VITEST_LOGO from "../assets/logos/logo_vitest.png";
 import JEST_LOGO from "../assets/logos/logo_jest.png";
 import RTL_LOGO from "../assets/logos/logo_RTL.png";
 import FIGMA_LOGO from "../assets/logos/logo_figma.png";
+import TAILWIND_LOGO from "../assets/logos/logo_tailwind.png";
 
 export const stackLabels = [
   { name: "Javascript", src: JS_LOGO },
@@ -26,4 +27,5 @@ export const stackLabels = [
   { name: "Jest", src: JEST_LOGO },
   { name: "React Testing Library", src: RTL_LOGO },
   { name: "Figma", src: FIGMA_LOGO },
+  { name: "Tailwind", src: TAILWIND_LOGO },
 ];
