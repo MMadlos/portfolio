@@ -2,6 +2,7 @@ import IMGTest from "../assets/avatar_test.jpg";
 import OshopIMG from "../assets/oshop.jpg";
 import CronosIMG from "../assets/cronos.jpg";
 import PokememoryIMG from "../assets/pokememory.jpg";
+import BattleshipIMG from "../assets/battleship.jpg";
 
 export const projectsInfo = [
   {
@@ -29,7 +30,7 @@ export const projectsInfo = [
     name: "Battleship game",
     description:
       "Classic game developed with JavaScript. This project was made to practice programming logic, how to use some patterns such as the factory method and how to test with Jest.",
-    src: IMGTest,
+    src: BattleshipIMG,
     alt: "Image of the project",
     hrefWeb: "#",
     hrefGithub: "https://github.com/MMadlos/battleship-game",
