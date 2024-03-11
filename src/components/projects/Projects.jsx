@@ -83,7 +83,7 @@ function ProjectDescription({ description, hrefWeb, hrefGithub }) {
         {description}
       </p>
       <div className="flex flex-row gap-6 sm:gap-4">
-        <Link text="Website" href={hrefWeb} light />
+        {hrefWeb !== "#" && <Link text="Website" href={hrefWeb} light />}
         <Link text="Github" href={hrefGithub} light />
       </div>
     </>
