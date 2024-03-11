@@ -18,7 +18,7 @@ export const projectsInfo = [
     id: 2,
     name: "Cronos",
     description:
-      "App to quickly check the most suitable date for an event for all (or most) participants. This project came to my mind when planning a bachelor party. We were a group of 6 discussing the best possible date for the event on WhatsApp and it soon became chaotic. So, I though, why not to do an app that makes this process easier.",
+      "App to quickly check the most suitable date for an event for all (or most) participants. This project came to my mind when I was planning an event. As a group of 6, we were discussing our availability and which date was the best for the event and soon became chaotic. Then, I though to make this process easier.",
     src: CronosIMG,
     alt: "Image of the project",
     hrefWeb: "https://cronos-app.vercel.app/",
