@@ -70,7 +70,7 @@ const OSHOP = {
 const BATTLESHIP = {
   imgURL: IMG_BATTLESHIP,
   header: "Battleship Game",
-  subheader: "",
+  subheader: "Game",
   features: [
     "Set pieces manually",
     "Set pieces randomly",
@@ -90,5 +90,6 @@ const BATTLESHIP = {
 
 Object.freeze(DASHBOARD);
 Object.freeze(OSHOP);
+Object.freeze(BATTLESHIP);
 
-export const PROJECTS_DATA = [DASHBOARD];
+export const PROJECTS_DATA = [DASHBOARD, OSHOP, BATTLESHIP];
