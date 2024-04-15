@@ -7,10 +7,13 @@ export default {
   theme: {
     fontFamily: {
       fira: ["Fira Code", ...defaultTheme.fontFamily.sans],
-      inter: ["Inter", ...defaultTheme.fontFamily.sans],
-      geist: ["Geist", ...defaultTheme.fontFamily.sans],
+      sans: ["Geist", "Inter", ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        16: "repeat(16, minmax(0, 1fr))",
+      },
+    },
   },
   plugins: [],
 };
