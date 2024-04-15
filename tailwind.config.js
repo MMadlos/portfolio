@@ -7,16 +7,12 @@ const breathe = {
     "80%": { "font-weight": "800", "font-width": "50" },
     "0%, 100%": { "font-weight": "200", "font-width": "100" },
   },
-  animation: "breathe 3000ms infinite both",
+  animation: "breathe 2500ms infinite both",
 };
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily: {
-      inter: ["Inter", ...defaultTheme.fontFamily.sans],
-      fira: ["Fira Code", ...defaultTheme.fontFamily.sans],
-    },
     extend: {
       gridTemplateColumns: {
         16: "repeat(16, minmax(0, 1fr))",
