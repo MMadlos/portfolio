@@ -12,41 +12,35 @@ export default function ProjectList() {
     <main>
       <section>
         <ProjectContainer
-          imgURL={Oshop}
-          heading="Interactive dashboard"
-          subheading="Featured"
-        >
-          <ProjectContent />
-        </ProjectContainer>
-
-        <ProjectContainer
           imgURL={Dashboard}
           heading="Interactive dashboard"
+          subheading="Latest"
+        />
+
+        <ProjectContainer
+          imgURL={Oshop}
+          heading="Online shop"
           subheading="Featured"
-        >
-          <ProjectContent />
-        </ProjectContainer>
+        />
 
         <ProjectContainer
           imgURL={Battleship}
           heading="Interactive dashboard"
           subheading="Latest"
-        >
-          <ProjectContent />
-        </ProjectContainer>
+        />
       </section>
     </main>
   );
 }
 
-function ProjectContainer({ imgURL, heading, subheading, children }) {
+function ProjectContainer({ imgURL, heading, subheading }) {
   return (
     <article>
       <div className="relative h-dvh w-full px-2">
         <ProjectImage imgURL={imgURL} />
         <OverlayContent heading={heading} subheading={subheading} />
       </div>
-      {children}
+      <ProjectContent />
     </article>
   );
 }
