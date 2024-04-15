@@ -1,12 +1,12 @@
 export default function Header() {
   return (
     <header className="w-full">
-      <div className="p-4 flex justify-between items-center  bg-[#FAFAFA]/70 ">
-        <h1 className="text-xl tracking-tighter font-semibold text-[#334155]  ">
+      <div className="p-4 flex justify-between items-center  bg-[#FAFAFA] ">
+        <h1 className="text-xl uppercase tracking-tighter font-semibold text-stone-900  ">
           Michael Madlos
         </h1>
 
-        <div className="flex  gap-4 text-stone-700 text-sm">
+        <div className="flex  gap-12 text-stone-900 ">
           <a
             href="#"
             className="flex items-center gap-2 uppercase font-bold hover:text-stone-400"

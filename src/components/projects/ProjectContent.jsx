@@ -4,23 +4,25 @@ export default function ProjectContent({ projectData }) {
   return (
     <div className="px-4 py-12 grid grid-cols-1 gap-9 md:py-24 md:px-0 md:grid-cols-16 ">
       <div className="col-span-1  md:col-span-6 md:text-right">
-        <h2 className="text-5xl font-semibold ">{header}</h2>
+        <h2 className="text-5xl font-semibold tracking-tighter text-stone-800">
+          {header}
+        </h2>
       </div>
 
       <div className="col-span-1 md:col-start-8 md:col-span-7 leading-relaxed text-neutral-600 flex flex-col gap-10">
         <div className="flex flex-col gap-3 ">
-          <p className="mb-4 text-3xl  text-[#737373]">{description}</p>
+          <p className="mb-4 text-3xl  text-stone-400 ">{description}</p>
         </div>
 
         <div className="flex flex-col gap-3 ">
-          <h3 className="text-xl font-semibold text-[#171717]">Features</h3>
+          <h3 className="text-xl font-semibold text-stone-600">Features</h3>
           {features.map((feature, index) => (
             <FeatureTag key={index} text={feature} />
           ))}
         </div>
 
         <div className="flex flex-col gap-3 ">
-          <h3 className="text-xl font-semibold text-[#171717]">Technologies</h3>
+          <h3 className="text-xl font-semibold text-stone-600">Technologies</h3>
           <div className="flex flex-row gap-2 flex-wrap">
             {technologies.map((tech, index) => (
               <TechTag key={index} text={tech} />
