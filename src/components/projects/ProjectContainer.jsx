@@ -11,7 +11,7 @@ export default function ProjectContainer({ projectData }) {
         <ProjectImage imgURL={imgURL} />
         <OverlayContent heading={header} subheading={subheader} />
       </div>
-      <ProjectContent />
+      <ProjectContent projectData={projectData} />
     </article>
   );
 }
