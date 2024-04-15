@@ -79,7 +79,7 @@ const BATTLESHIP = {
     "Computer attacking player",
     "Game Over conditions",
   ],
-  technologies: ["HTML", "CSS", "JavaScript", "Webpack", "RJest", "Figma"],
+  technologies: ["HTML", "CSS", "JavaScript", "Webpack", "Jest", "Figma"],
   description:
     "Classic game developed with JavaScript. This project was made to practice programming logic, how to use some patterns such as the factory method and how to test with Jest.",
   links: {
