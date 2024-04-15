@@ -7,8 +7,6 @@ import Oshop from "../../assets/projects/Oshop.png";
 
 import ProjectContent from "./ProjectContent";
 
-import IMG_OSHOP from "../../assets/oshop.jpg";
-
 export default function ProjectList() {
   return (
     <main>
@@ -83,7 +81,7 @@ function ProjectImage({ imgURL }) {
         style={{
           opacity: opacityOverlay,
         }}
-        className="absolute inset-0 bg-black/80"
+        className="absolute inset-0 bg-black/70"
       ></motion.div>
     </motion.div>
   );
