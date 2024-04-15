@@ -3,7 +3,7 @@ import "./App.css";
 
 // import About from "./components/about/About";
 
-import ProjectList from "./components/projects/Projects";
+import ProjectList from "./components/projects/ProjectList";
 
 function App() {
   return (

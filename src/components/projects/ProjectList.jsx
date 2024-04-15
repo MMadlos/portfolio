@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import ProjectContent from "./ProjectContent";
+
 import IMG_OSHOP from "../../assets/oshop.jpg";
 
 export default function ProjectList() {
@@ -18,7 +20,9 @@ export default function ProjectList() {
           imgURL={IMG_OSHOP}
           heading="Interactive dashboard"
           subheading="Featured"
-        />
+        >
+          <ProjectContent />
+        </ProjectContainer>
       </section>
     </main>
   );
@@ -104,18 +108,5 @@ function OverlayContent({ heading, subheading }) {
         {heading}
       </p>
     </motion.div>
-  );
-}
-
-function ProjectContent({ content }) {
-  return (
-    <div className="h-dvh">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-        ipsa nostrum sapiente tenetur ea ipsum tempora quod architecto explicabo
-        fugiat eveniet ullam perspiciatis ab, quis commodi optio nisi. Totam,
-        soluta?
-      </p>
-    </div>
   );
 }
