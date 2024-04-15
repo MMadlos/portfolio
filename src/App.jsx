@@ -1,13 +1,15 @@
 import "./App.css";
+// import Projects from "./components/Z_Archived/Projects";
 
-import About from "./components/about/About";
-import Projects from "./components/Z_Archived/Projects";
+// import About from "./components/about/About";
+
+import ProjectList from "./components/projects/Projects";
 
 function App() {
   return (
-    <div className="sm:flex sm:flex-row sm:h-dvh sm:overflow-y-hidden">
+    <div className="">
       {/* <About /> */}
-      <Projects />
+      <ProjectList />
     </div>
   );
 }
