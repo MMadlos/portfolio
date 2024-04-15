@@ -1,6 +1,10 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import Battleship from "../../assets/projects/Battleship.png";
+import Dashboard from "../../assets/projects/Dashboard.png";
+import Oshop from "../../assets/projects/Oshop.png";
+
 import ProjectContent from "./ProjectContent";
 
 import IMG_OSHOP from "../../assets/oshop.jpg";
@@ -10,16 +14,25 @@ export default function ProjectList() {
     <main>
       <section>
         <ProjectContainer
-          imgURL={IMG_OSHOP}
+          imgURL={Oshop}
           heading="Interactive dashboard"
-          subheading="Latest"
+          subheading="Featured"
         >
           <ProjectContent />
         </ProjectContainer>
+
         <ProjectContainer
-          imgURL={IMG_OSHOP}
+          imgURL={Dashboard}
           heading="Interactive dashboard"
           subheading="Featured"
+        >
+          <ProjectContent />
+        </ProjectContainer>
+
+        <ProjectContainer
+          imgURL={Battleship}
+          heading="Interactive dashboard"
+          subheading="Latest"
         >
           <ProjectContent />
         </ProjectContainer>
@@ -47,7 +60,7 @@ function ProjectImage({ imgURL }) {
     offset: ["end end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.7], [1, 0.8]);
+  const scale = useTransform(scrollYProgress, [0, 0.7], [1, 0.95]);
   const opacityImage = useTransform(scrollYProgress, [0.7, 0.8], [1, 0]);
   const borderRadius = useTransform(scrollYProgress, [0, 0.2], ["0px", "16px"]);
 
@@ -82,10 +95,10 @@ function OverlayContent({ heading, subheading }) {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [250, -250]);
+  const y = useTransform(scrollYProgress, [0, 1], [500, -350]);
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.55, 0.6, 0.7],
+    [0, 0.6, 0.65, 0.7],
     [0, 1, 1, 0]
   );
 
