@@ -11,7 +11,9 @@ export default function ProjectContent({ projectData }) {
 
       <div className="col-span-1 md:col-start-8 md:col-span-7 leading-relaxed text-neutral-600 flex flex-col gap-10">
         <div className="flex flex-col gap-3 ">
-          <p className="mb-4 text-3xl  text-stone-400 ">{description}</p>
+          <p className="mb-4 text-3xl  text-stone-400 tracking-tight">
+            {description}
+          </p>
         </div>
 
         <div className="flex flex-col gap-3 ">
