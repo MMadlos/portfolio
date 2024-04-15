@@ -1,8 +1,6 @@
 export default function ProjectContent({ projectData }) {
   const { header, features, technologies, description, links } = projectData;
 
-  // TODO -> Add links
-
   return (
     <div className="px-4 py-12 grid grid-cols-1 gap-9 md:py-24 md:px-0 md:grid-cols-16 ">
       <div className="col-span-1  md:col-span-6 md:text-right">
@@ -11,7 +9,6 @@ export default function ProjectContent({ projectData }) {
 
       <div className="col-span-1 md:col-start-8 md:col-span-7 leading-relaxed text-neutral-600 flex flex-col gap-10">
         <div className="flex flex-col gap-3 ">
-          {/* <h3 className="text-xl font-semibold text-[#171717]">Description</h3> */}
           <p className="mb-4 text-3xl  text-[#737373]">{description}</p>
         </div>
 
