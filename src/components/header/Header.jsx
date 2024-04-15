@@ -1,21 +1,21 @@
 export default function Header() {
   return (
     <header className="w-full">
-      <div className="p-4 flex justify-between items-center  bg-[#FAFAFA] ">
-        <h1 className="text-xl  tracking-tight font-medium text-stone-900  ">
+      <div className="p-4 flex justify-between items-center  bg-[#8C8C8C] text-[#FAFAFA] ">
+        <h1 className="text-xl  tracking-tight font-medium   ">
           Michael Madlos
         </h1>
 
-        <div className="flex gap-12 text-stone-900 ">
+        <div className="flex gap-12 ">
           <a
             href="https://www.linkedin.com/in/michaelmadlos/"
-            className="flex items-center gap-2 font-medium hover:text-stone-400"
+            className="flex items-center gap-2 font-medium hover:opacity-50"
           >
             Linkedin
           </a>
           <a
             href="https://github.com/MMadlos"
-            className="flex items-center gap-2 font-medium hover:text-stone-400"
+            className="flex items-center gap-2 font-medium hover:opacity-50"
           >
             Github
           </a>
