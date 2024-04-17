@@ -38,10 +38,11 @@ function ProjectImage({ imgURL }) {
         scale,
         borderRadius,
         opacity: opacityImage,
+        height: "100vh",
         top: 0,
       }}
       ref={imageRef}
-      className="sticky z-0 overflow-hidden h-screen shadow-sm"
+      className="sticky z-0 overflow-hidden shadow-sm"
     >
       <motion.div
         style={{
