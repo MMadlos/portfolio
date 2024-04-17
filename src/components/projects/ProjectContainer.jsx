@@ -78,7 +78,7 @@ function OverlayContent({ heading, subheading }) {
       <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
         {subheading}
       </p>
-      <p className="text-center text-4xl font-bold md:text-5xl xl:text-7xl">
+      <p className="text-center text-4xl font-bold md:text-5xl xl:text-7xl px-4">
         {heading}
       </p>
     </motion.div>
