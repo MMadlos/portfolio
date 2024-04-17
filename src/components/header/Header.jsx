@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="w-full">
-      <div className="p-4 flex justify-between items-center  bg-[#8C8C8C] text-[#FAFAFA] ">
+      <div className="p-4 flex justify-between items-center  bg-[#333] text-[#FAFAFA] ">
         <h1 className="text-xl  tracking-tight font-medium   ">
           Michael Madlos
         </h1>
