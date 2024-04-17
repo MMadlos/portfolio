@@ -7,7 +7,7 @@ export default function ProjectContainer({ projectData }) {
 
   return (
     <article>
-      <div className="relative h-dvh w-full px-2">
+      <div className="relative h-[150dvh]">
         <ProjectImage imgURL={imgURL} />
         <OverlayContent heading={header} subheading={subheader} />
       </div>
@@ -23,11 +23,11 @@ function ProjectImage({ imgURL }) {
     offset: ["end end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.7], [1, 0.95]);
+  const scale = useTransform(scrollYProgress, [0, 0.7], [1, 0.8]);
   const opacityImage = useTransform(scrollYProgress, [0.7, 0.8], [1, 0]);
   const borderRadius = useTransform(scrollYProgress, [0, 0.2], ["0px", "16px"]);
 
-  const opacityOverlay = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+  const opacityOverlay = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
 
   return (
     <motion.div
@@ -38,9 +38,10 @@ function ProjectImage({ imgURL }) {
         scale,
         borderRadius,
         opacity: opacityImage,
+        top: 0,
       }}
       ref={imageRef}
-      className="sticky z-0 overflow-hidden w-full h-full"
+      className="sticky z-0 overflow-hidden h-screen shadow-sm"
     >
       <motion.div
         style={{
@@ -58,10 +59,10 @@ function OverlayContent({ heading, subheading }) {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [500, -350]);
+  const y = useTransform(scrollYProgress, [0, 1], [350, -350]);
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.6, 0.65, 0.7],
+    [0.3, 0.4, 0.6, 0.7],
     [0, 1, 1, 0]
   );
 
