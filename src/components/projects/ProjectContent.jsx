@@ -4,14 +4,14 @@ export default function ProjectContent({ projectData }) {
   return (
     <div className="px-4 py-12 grid grid-cols-1 gap-9 md:py-24 md:px-0 md:grid-cols-16 ">
       <div className="col-span-1  md:col-span-6 md:text-right">
-        <h2 className="text-5xl font-semibold tracking-tighter text-stone-800">
+        <h2 className="text-5xl font-semibold tracking-tighter  text-stone-800 ">
           {header}
         </h2>
       </div>
 
       <div className="col-span-1 md:col-start-8 md:col-span-7 leading-relaxed text-neutral-600 flex flex-col gap-10">
         <div className="flex flex-col gap-3 ">
-          <p className="mb-4 text-3xl  text-stone-400 tracking-tight">
+          <p className="mb-4 text-3xl  text-stone-400 tracking-tight ">
             {description}
           </p>
         </div>
@@ -63,7 +63,7 @@ function FeatureTag({ text }) {
 
 function TechTag({ text }) {
   return (
-    <div className="px-6 py-2 bg-[#FAFAFA] rounded-full font-medium text-lg text-[#737373] ">
+    <div className="px-6 py-1 bg-[#FAFAFA] rounded-full font-medium text-md text-[#737373] ">
       <p>{text}</p>
     </div>
   );
