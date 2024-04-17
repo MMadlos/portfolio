@@ -7,7 +7,7 @@ export default function ProjectContainer({ projectData }) {
 
   return (
     <article>
-      <div className="relative h-[150dvh]">
+      <div className="relative h-[150vh]">
         <ProjectImage imgURL={imgURL} />
         <OverlayContent heading={header} subheading={subheader} />
       </div>
