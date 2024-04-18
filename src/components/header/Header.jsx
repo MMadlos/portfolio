@@ -11,16 +11,27 @@ export default function Header() {
     setLastScrollY(currentScrollY);
   }
 
+  function handleMouseMove(e) {
+    if (isVisible) return;
+
+    const mouseY = e.clientY;
+    if (mouseY < 40) {
+      setIsVisible(true);
+    }
+  }
+
   useEffect(() => {
     window.addEventListener("scroll", handleNavBar, { passive: true });
+    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       window.removeEventListener("scroll", handleNavBar);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [lastScrollY]);
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 ">
+    <header className="w-full fixed top-0 left-0 z-50 bg-transparent ">
       <AnimatePresence>
         {isVisible && (
           <motion.div
