@@ -26,6 +26,10 @@ export default {
       fontFamily: {
         sans: ["Geist", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        "gradient-noise":
+          "url('https://grainy-gradients.vercel.app/noise.svg')",
+      },
     },
   },
   plugins: [],
