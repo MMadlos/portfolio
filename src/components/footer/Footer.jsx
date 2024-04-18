@@ -21,42 +21,90 @@ export default function Footer() {
 
       <div className="flex flex-col gap-8 md:flex-row md:gap-16  lg:justify-between lg:pl-8 xl:gap-24">
         <div>
-          <p className="font-bold text-lg text-emerald-400">Credits</p>
-          <div>
-            <p>Font - Geist from Vercel</p>
-            <p>Icons - Heroicons and Fontawesome</p>
+          <p className="font-medium text-lg text-emerald-400">Credits</p>
+          <div className="flex flex-col gap-1">
+            <a
+              href="https://vercel.com/geist/introduction"
+              target="_blank"
+              className="hover:underline"
+            >
+              Font - Geist from Vercel
+            </a>
+            <a
+              href="https://heroicons.com/"
+              target="_blank"
+              className="hover:underline"
+            >
+              Icons - Heroicons
+            </a>
+            <a
+              href="https://fontawesome.com/"
+              target="_blank"
+              className="hover:underline"
+            >
+              Icons - Fontawesome
+            </a>
           </div>
         </div>
 
         <div>
-          <p className="font-bold text-lg text-emerald-400">Projects</p>
+          <p className="font-medium text-lg text-emerald-400">Projects</p>
           <div className="flex flex-col gap-4 xl:flex-row xl:gap-12">
             <div>
               <p className="font-bold">Dashboard</p>
-              <div>
-                <p>Live demo</p>
-                <p>Github</p>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="https://dashboard-users-registration.vercel.app/"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  Live demo
+                </a>
+                <a
+                  href="https://github.com/MMadlos/dashboard-users-registration"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  Github
+                </a>
               </div>
             </div>
             <div>
               <p className="font-bold">Online shop</p>
-              <div>
-                <p>Live demo</p>
-                <p>Github</p>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="https://online-shop-brown-two.vercel.app/"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  Live demo
+                </a>
+                <a
+                  href="https://github.com/MMadlos/online-shop"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  Github
+                </a>
               </div>
             </div>
             <div>
               <p className="font-bold">Battleship game</p>
-              <div>
-                <p>Live demo</p>
-                <p>Github</p>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="https://github.com/MMadlos/battleship-game"
+                  className="hover:underline"
+                  target="_blank"
+                >
+                  Github
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         <div>
-          <p className="font-bold text-lg text-emerald-400">Contact</p>
+          <p className="font-medium text-lg text-emerald-400">Contact</p>
           <div className="flex flex-col gap-1 ">
             <a
               href="https://www.linkedin.com/in/michaelmadlos/"
