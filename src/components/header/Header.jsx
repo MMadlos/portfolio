@@ -5,9 +5,16 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const screenHeight = window.innerHeight;
+
   function handleNavBar() {
     const currentScrollY = window.scrollY;
-    setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
+    setIsVisible(
+      currentScrollY < screenHeight ||
+        lastScrollY > currentScrollY ||
+        currentScrollY < 10
+    );
+
     setLastScrollY(currentScrollY);
   }
 
