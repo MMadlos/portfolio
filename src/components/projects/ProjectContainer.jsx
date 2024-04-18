@@ -34,7 +34,7 @@ function ProjectImage({ imgURL }) {
       style={{
         backgroundImage: `url(${imgURL})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "right bottom",
         scale,
         borderRadius,
         opacity: opacityImage,
@@ -48,7 +48,7 @@ function ProjectImage({ imgURL }) {
         style={{
           opacity: opacityOverlay,
         }}
-        className="absolute inset-0 bg-black/70"
+        className="absolute inset-0 bg-black/50"
       ></motion.div>
     </motion.div>
   );
