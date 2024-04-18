@@ -16,15 +16,21 @@ export default function ProjectContent({ projectData }) {
           </p>
         </div>
 
-        <div className="flex flex-col gap-3 ">
-          <h3 className="text-xl font-semibold text-stone-600">Features</h3>
-          {features.map((feature, index) => (
-            <FeatureTag key={index} text={feature} />
-          ))}
+        <div className="flex flex-col gap-4 ">
+          <h3 className="text-base font-bold sm:text-xl sm:font-semibold text-stone-600 tracking-tight">
+            Features
+          </h3>
+          <div className="flex flex-col gap-1">
+            {features.map((feature, index) => (
+              <FeatureTag key={index} text={feature} />
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col gap-3 ">
-          <h3 className="text-xl font-semibold text-stone-600">Technologies</h3>
+          <h3 className="text-base font-bold sm:text-xl sm:font-semibold text-stone-600 tracking-tight">
+            Technologies
+          </h3>
           <div className="flex flex-row gap-2 flex-wrap">
             {technologies.map((tech, index) => (
               <TechTag key={index} text={tech} />
@@ -40,23 +46,23 @@ export default function ProjectContent({ projectData }) {
 
 function FeatureTag({ text }) {
   return (
-    <div className="flex flex-row gap-2 text-[#737373] items-center">
+    <div className="flex flex-row gap-2 items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={2}
+        stroke-width="1.5"
         stroke="currentColor"
-        className="size-5 md:size-6"
+        class="size-6 stroke-[#737373]/40"
       >
         <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m4.5 12.75 6 6 9-13.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
         />
       </svg>
 
-      <p className="text-lg">{text}</p>
+      <p className="text-lg text-[#737373] ">{text}</p>
     </div>
   );
 }
