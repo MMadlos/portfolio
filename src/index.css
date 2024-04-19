@@ -19,9 +19,9 @@
   .noise-color {
     background: radial-gradient(
       circle at bottom left,
-      #6ee7b7 30%,
-      #fafafa 45%,
-      #ffffff 80%
+      #6ee7b7 20%,
+      #fafafa 75%,
+      #ffffff 100%
     );
   }
 }
