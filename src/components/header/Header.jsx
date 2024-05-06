@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="w-full fixed top-0 left-0 z-50 ">
+    <header className="w-full absolute top-0 left-0 z-50 ">
       <div className="py-2 px-4 sm:px-4 sm:py-1 flex gap-8 items-center  justify-between ">
         <h1 className="hidden sm:block text-2xl tracking-tighter font-bold pl-2 text-white ">
           Michael Madlos

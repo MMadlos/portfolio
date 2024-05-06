@@ -7,8 +7,10 @@ import ProjectList from "./components/projects/ProjectList";
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <div className="relative">
+        <Header />
+        <Hero />
+      </div>
       <ProjectList />
       <Footer />
     </>

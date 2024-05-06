@@ -6,8 +6,9 @@ export default function Hero() {
       <div class="circle-lg"></div>
 
       <div className="flex items-end h-full">
-        <div className="h-[35vh]  px-12 flex flex-row gap-4">
-          <div className="h-full w-[1px] bg-gradient-to-b from-white to-white/0  relative">
+        <div className="h-[35vh]  px-12 flex flex-row gap-4 ">
+          <div className="relative">
+            <div className="h-full w-[1px] bg-gradient-to-b from-white to-white/0"></div>
             <svg
               viewBox="0 0 120 120"
               version="1.1"
