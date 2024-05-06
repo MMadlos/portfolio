@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="h-dvh bg-gradient-to-b from-[#305EDF] via-[#8214EF] via-30% to-[#0E0E0E] to-80%">
+    <section className="h-dvh bg-gradient-to-b from-[#305EDF] via-[#8214EF] via-30% to-[#0E0E0E] to-80% overflow-x-hidden relative">
       <div class="circle-sm left"></div>
       <div class="circle-sm right"></div>
       <div class="circle-lg"></div>
@@ -20,7 +20,7 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col gap-4 pt-6">
-            <h3 className="text-3xl font-semibold tracking-tighter text-white md:text-4xl lg:text-5xl ">
+            <h3 className="text-3xl font-semibold tracking-tight text-white md:text-4xl lg:text-5xl ">
               Front-End Developer
             </h3>
             <p className="tracking-tight text-white/80 text-lg lg:text-2xl lg:max-w-[35vw]">
