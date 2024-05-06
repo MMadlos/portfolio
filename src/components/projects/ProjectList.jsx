@@ -1,12 +1,15 @@
 import DASHBOARD_IMG from "../../assets/projects/Dashboard.png";
+import Pointer from "./Pointer";
 
 export default function ProjectList() {
   return (
-    <main className="bg-[#0E0E0E] px-12  py-12">
+    <main className="bg-[#0E0E0E] px-12  py-12 relative overflow-hidden">
+      <Pointer />
+
       <div className="container mx-auto max-w-[1000px]">
         <h1 className="text-xl font-bold text-white">Projects</h1>
 
-        <div className="flex flex-col gap-4 group/list">
+        <div className="flex flex-col gap-4 group/list relative">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
@@ -18,7 +21,7 @@ export default function ProjectList() {
 
 function ProjectCard() {
   return (
-    <article className="flex flex-col sm:flex-row gap-16 border border-[#5810A2]/40 py-[24px] px-[40px] rounded-md bg-[#1D0D35]/50 backdrop-blur group-hover/list:opacity-15 hover:!opacity-100 transition-opacity">
+    <article className="flex flex-col sm:flex-row gap-16 border border-[#5810A2]/20 py-[24px] px-[40px] rounded-md bg-[#1D0D35]/50 backdrop-blur group-hover/list:opacity-15 hover:!opacity-100 transition-opacity">
       <picture>
         <img
           src={DASHBOARD_IMG}
@@ -49,13 +52,13 @@ function ProjectCard() {
         <div className="flex flex-row gap-4 text-white">
           <a
             href="/"
-            className="bg-[#8214EF] px-4 py-2 rounded text-sm font-semibold hover:bg-[#450B7D]"
+            className="bg-[#8214EF] px-4 py-2 rounded text-sm font-semibold hover:bg-[#450B7D] transition"
           >
             Live demo
           </a>
           <a
             href="/"
-            className="px-4 py-2 rounded text-sm font-medium hover:underline"
+            className="px-4 py-2 rounded text-sm font-medium hover:underline "
           >
             Github
           </a>
