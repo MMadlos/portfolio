@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="h-dvh bg-gradient-to-b from-[#305EDF] via-[#8214EF] via-30% to-[#0E0E0E] to-80%">
+    <section className="h-dvh bg-gradient-to-b from-[#305EDF] via-[#8214EF] via-30% to-[#0E0E0E] to-80% relative overflow-x-hidden">
       <div class="circle-sm left"></div>
       <div class="circle-sm right"></div>
       <div class="circle-lg"></div>
