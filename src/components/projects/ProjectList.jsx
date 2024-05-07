@@ -7,12 +7,12 @@ export default function ProjectList() {
   return (
     <MainContainer>
       <div className="container mx-auto max-w-[1000px]">
-        <div className="flex flex-row items-center gap-4 mb-8">
+        <div className="flex flex-row items-center gap-3 mb-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="size-6 text-white"
+            className="size-4 text-[#B080FF]"
           >
             <path
               fill-rule="evenodd"
