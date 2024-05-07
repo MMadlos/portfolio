@@ -1,11 +1,9 @@
 import DASHBOARD_IMG from "../../assets/projects/Dashboard.png";
-import Pointer from "./Pointer";
+import MainContainer from "./MainContainer";
 
 export default function ProjectList() {
   return (
-    <main className="bg-[#0E0E0E] px-12  py-12 relative overflow-hidden">
-      <Pointer />
-
+    <MainContainer>
       <div className="container mx-auto max-w-[1000px]">
         <h1 className="text-xl font-bold text-white">Projects</h1>
 
@@ -15,13 +13,13 @@ export default function ProjectList() {
           <ProjectCard />
         </div>
       </div>
-    </main>
+    </MainContainer>
   );
 }
 
 function ProjectCard() {
   return (
-    <article className="flex flex-col sm:flex-row gap-16 border border-[#5810A2]/20 py-[24px] px-[40px] rounded-md bg-[#1D0D35]/50 backdrop-blur group-hover/list:opacity-15 hover:!opacity-100 transition-opacity">
+    <article className="flex flex-col sm:flex-row gap-16 border border-[#5810A2]/20 hover:border-[#5810A2]/70 py-[24px] px-[40px] rounded-md bg-[#1D0D35]/20 hover:bg-[#1D0D35]/70 backdrop-blur group-hover/list:opacity-15 hover:!opacity-100 transition-opacity">
       <picture>
         <img
           src={DASHBOARD_IMG}

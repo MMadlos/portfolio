@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
-const SIZE = 384;
+const SIZE = 300;
 
-export default function Pointer() {
+export default function MainContainer({ children }) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   function updateMousePosition(e) {
     const $main = document.querySelector("main").getBoundingClientRect();
 
-    const x = e.clientX - SIZE / 2;
-    const y = e.clientY - $main.top - SIZE / 2;
+    const x = e.clientX;
+    const y = e.clientY - $main.top;
 
     setPosition({ x, y });
   }
@@ -22,17 +22,14 @@ export default function Pointer() {
     };
   }, []);
 
-  const { x, y } = position;
-
-  const positions = {
-    x: `${x}px`,
-    y: `${y}px`,
+  const styles = {
+    background: `radial-gradient(${SIZE}px at ${position.x}px ${position.y}px, rgba(51, 8, 94, 1)
+    , #0E0E0E 100%)`,
   };
 
   return (
-    <div
-      className={`transition bg-[#8214ef] rounded-full absolute blur-3xl opacity-20`}
-      style={{ left: positions.x, top: positions.y, width: SIZE, height: SIZE }}
-    ></div>
+    <main className=" px-12  py-12 relative overflow-hidden" style={styles}>
+      {children}
+    </main>
   );
 }
