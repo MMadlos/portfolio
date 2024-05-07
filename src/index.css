@@ -44,13 +44,20 @@
 @media (min-width: 1024px) {
   .hero-bg {
     background: radial-gradient(
-        100vw at 50% -50%,
-        #305edf 20%,
-        #8214ef 25%,
+        100vw at 0% -25%,
+        #305edf 10%,
+        #8214ef 20%,
+        rgba(30, 14, 46, 0.4) 40%,
+        transparent 100%
+      ),
+      radial-gradient(
+        100vw at 60% -50%,
+        #305edf 10%,
+        #8214ef 20%,
         rgba(30, 14, 46, 0.4) 50%,
         transparent 100%
       ),
-      linear-gradient(#8214ef, #1e0e2e 80%);
+      linear-gradient(#8214ef, #1e0e2e 70%);
   }
 }
 
