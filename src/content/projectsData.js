@@ -15,16 +15,7 @@ const DASHBOARD = {
     "Items quantity selector",
     "Pagination",
   ],
-  technologies: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Tailwind CSS",
-    "Chart JS",
-    "Vite",
-    "Figma",
-  ],
+  technologies: ["React", "Tailwind CSS", "Chart JS", "Vite"],
   description:
     "Dynamic dashboard, fetching user data from an API and showcasing it through interactive charts powered by Chart.js. It includes features such as a dark/light mode, sorting options and a pagination panel.",
   links: {
@@ -48,16 +39,12 @@ const OSHOP = {
     "Cart summary",
   ],
   technologies: [
-    "HTML",
-    "CSS",
-    "JavaScript",
     "React",
     "Tailwind CSS",
     "React Router",
     "React Testing Library",
     "Vite",
     "Vitest",
-    "Figma",
   ],
   description:
     "Single Page Application (SPA) developed with React that contains pages with a product catalog, information about each product, and a shopping cart.",
@@ -79,7 +66,7 @@ const BATTLESHIP = {
     "Computer attacking player",
     "Game Over conditions",
   ],
-  technologies: ["HTML", "CSS", "JavaScript", "Webpack", "Jest", "Figma"],
+  technologies: ["HTML", "CSS", "JavaScript", "Webpack", "Jest"],
   description:
     "Classic game developed with JavaScript. This project was made to practice programming logic, how to use some patterns such as the factory method and how to test with Jest.",
   links: {
