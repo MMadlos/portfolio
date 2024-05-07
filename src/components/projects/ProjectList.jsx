@@ -7,7 +7,7 @@ export default function ProjectList() {
   return (
     <MainContainer>
       <div className="container mx-auto max-w-[1000px]">
-        <h1 className="text-xl font-bold text-white">Projects</h1>
+        <h1 className="text-xl font-bold text-white mb-8">Projects</h1>
 
         <div className="flex flex-col gap-4 group/list relative">
           {PROJECTS_DATA.map((projectData, index) => {

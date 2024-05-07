@@ -25,6 +25,20 @@
   }
 }
 
+/* SCREEN SM */
+
+/* radial-gradient(100vw at 50% 0, #305edf, #8214ef 30%, #1e0e2e 80%), */
+.hero-bg {
+  background: radial-gradient(
+      100vw at 50% 0,
+      #305edf,
+      #8214ef 30%,
+      #1e0e2e 70%,
+      transparent 100%
+    ),
+    linear-gradient(#8214ef, #1e0e2e 80%);
+}
+
 .circle-sm.left {
   --size: 50vh;
   position: absolute;

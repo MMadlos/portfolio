@@ -24,7 +24,7 @@ export default function MainContainer({ children }) {
 
   const styles = {
     background: `radial-gradient(${SIZE}px at ${position.x}px ${position.y}px, rgba(51, 8, 94, 1)
-    , #0E0E0E 100%)`,
+    , #1E0E2E 100%)`,
   };
 
   return (
