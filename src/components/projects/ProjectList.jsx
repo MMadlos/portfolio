@@ -1,14 +1,20 @@
-import { PROJECTS_DATA } from "/src/content/projectsData.js";
-import ProjectContainer from "./ProjectContainer";
+import { PROJECTS_DATA } from "../../content/projectsData";
+
+import MainContainer from "./MainContainer";
+import ProjectCard from "./ProjectCard";
 
 export default function ProjectList() {
   return (
-    <main>
-      <section>
-        {PROJECTS_DATA.map((projectData, index) => {
-          return <ProjectContainer key={index} projectData={projectData} />;
-        })}
-      </section>
-    </main>
+    <MainContainer>
+      <div className="container mx-auto max-w-[1000px]">
+        <h1 className="text-xl font-bold text-white mb-8">Projects</h1>
+
+        <div className="flex flex-col gap-4 group/list relative">
+          {PROJECTS_DATA.map((projectData, index) => {
+            return <ProjectCard key={index} projectData={projectData} />;
+          })}
+        </div>
+      </div>
+    </MainContainer>
   );
 }
