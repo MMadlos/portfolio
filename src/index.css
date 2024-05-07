@@ -33,7 +33,7 @@
       100vw at 50% 0,
       #305edf,
       #8214ef 30%,
-      #1e0e2e 70%,
+      rgba(30, 14, 46, 0.4) 70%,
       transparent 100%
     ),
     linear-gradient(#8214ef, #1e0e2e 80%);

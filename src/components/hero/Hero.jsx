@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="h-dvh relative overflow-x-hidden hero-bg">
+    <section className="h-dvh relative overflow-hidden hero-bg">
       <div class="circle-sm left"></div>
       <div class="circle-sm right"></div>
       <div class="circle-lg"></div>

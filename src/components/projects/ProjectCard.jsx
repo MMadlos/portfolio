@@ -26,10 +26,11 @@ export default function ProjectCard({ projectData }) {
             );
           })}
         </ul>
-        <div className="flex flex-col gap-2">
-          <h2 className="font-bold text-white">{header}</h2>
 
-          <p className="font-medium text-sm text-white/70">{description}</p>
+        <div className="flex flex-col gap-2">
+          <h2 className="font-bold text-white text-xl">{header}</h2>
+
+          <p className="font-medium text text-white/70">{description}</p>
         </div>
 
         <div className="flex flex-row gap-4 text-white">

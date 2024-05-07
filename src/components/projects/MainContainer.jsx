@@ -28,7 +28,7 @@ export default function MainContainer({ children }) {
   };
 
   return (
-    <main className=" px-12  py-12 relative overflow-hidden" style={styles}>
+    <main className=" px-12  py-20 relative overflow-hidden" style={styles}>
       {children}
     </main>
   );
