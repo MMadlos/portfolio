@@ -34,7 +34,7 @@ export default function ProjectCard({ projectData }) {
               </svg>
             </div>
 
-            <p className="font-medium text text-white/50">{description}</p>
+            <p className="text-sm  text-white/50">{description}</p>
           </div>
 
           <ul className="flex gap-3 flex-wrap text-[#B080FF] text-xs">
@@ -49,21 +49,6 @@ export default function ProjectCard({ projectData }) {
               );
             })}
           </ul>
-
-          {/* <div className="flex flex-row gap-4 text-white">
-            <a
-              href={website}
-              className="bg-[#8214EF] px-4 py-2 rounded text-sm font-semibold hover:bg-[#450B7D] transition"
-            >
-              Live demo
-            </a>
-            <a
-              href={github}
-              className="px-4 py-2 rounded text-sm font-medium hover:underline "
-            >
-              Github
-            </a>
-          </div> */}
         </div>
       </article>
     </a>
