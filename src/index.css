@@ -45,9 +45,9 @@
   .hero-bg {
     background: radial-gradient(
         100vw at 50% -50%,
-        #305edf,
-        #8214ef 30%,
-        rgba(30, 14, 46, 0.4) 70%,
+        #305edf 20%,
+        #8214ef 25%,
+        rgba(30, 14, 46, 0.4) 50%,
         transparent 100%
       ),
       linear-gradient(#8214ef, #1e0e2e 80%);
