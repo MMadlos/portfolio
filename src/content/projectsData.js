@@ -17,7 +17,7 @@ const DASHBOARD = {
   ],
   technologies: ["React", "Tailwind CSS", "Chart JS", "Vite"],
   description:
-    "Dynamic dashboard, fetching user data from an API and showcasing it through interactive charts powered by Chart.js. It includes features such as a dark/light mode, sorting options and a pagination panel.",
+    "Dynamic dashboard developed with React and Tailwind CSS, fetching user data from an API and showcasing it through interactive charts powered by Chart.js. It includes features such as a dark/light mode, sorting options and a pagination panel.",
   links: {
     website: "https://dashboard-users-registration.vercel.app/",
     github: "https://github.com/MMadlos/dashboard-users-registration",
@@ -47,7 +47,7 @@ const OSHOP = {
     "Vitest",
   ],
   description:
-    "Single Page Application (SPA) developed with React that contains pages with a product catalog, information about each product, and a shopping cart.",
+    "Single Page Application (SPA) that uses an API to get a product list. It includes functionalities such as filtering, sorting, searching, adding products to the cart, editing the cart, and checkout.",
   links: {
     website: "https://online-shop-brown-two.vercel.app/",
     github: "https://github.com/MMadlos/online-shop",
@@ -68,7 +68,7 @@ const BATTLESHIP = {
   ],
   technologies: ["HTML", "CSS", "JavaScript", "Webpack", "Jest"],
   description:
-    "Classic game developed with JavaScript. This project was made to practice programming logic, how to use some patterns such as the factory method and how to test with Jest.",
+    "Classic game to sunk the enemy’s fleet by guessing their coordinates. Key features include a visually captivating game interface, intuitive ship placement mechanics, and dynamic gameplay.",
   links: {
     website: "https://battleship-game-psi.vercel.app/",
     github: "https://github.com/MMadlos/battleship-game",
