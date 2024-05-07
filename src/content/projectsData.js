@@ -83,7 +83,7 @@ const BATTLESHIP = {
   description:
     "Classic game developed with JavaScript. This project was made to practice programming logic, how to use some patterns such as the factory method and how to test with Jest.",
   links: {
-    website: "",
+    website: "https://battleship-game-psi.vercel.app/",
     github: "https://github.com/MMadlos/battleship-game",
   },
 };

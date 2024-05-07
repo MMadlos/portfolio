@@ -1,5 +1,3 @@
-import DASHBOARD_IMG from "../../assets/projects/Dashboard.png";
-
 export default function ProjectCard({ projectData }) {
   const { imgURL, header, technologies, description, links } = projectData;
 
@@ -17,11 +15,16 @@ export default function ProjectCard({ projectData }) {
 
       <div className="flex flex-col gap-10">
         <ul className="flex gap-3 flex-wrap text-[#B080FF] text-xs">
-          <li className="px-4 py-1 bg-[#450B7D]/50 rounded-full ">HTML</li>
-          <li className="px-4 py-1 bg-[#450B7D]/50 rounded-full ">CSS</li>
-          <li className="px-4 py-1 bg-[#450B7D]/50 rounded-full ">
-            JavaScript
-          </li>
+          {technologies.map((label, index) => {
+            return (
+              <li
+                key={index}
+                className="px-4 py-1 bg-[#450B7D]/50 rounded-full "
+              >
+                {label}
+              </li>
+            );
+          })}
         </ul>
         <div className="flex flex-col gap-2">
           <h2 className="font-bold text-white">{header}</h2>
@@ -31,13 +34,13 @@ export default function ProjectCard({ projectData }) {
 
         <div className="flex flex-row gap-4 text-white">
           <a
-            href="/"
+            href={website}
             className="bg-[#8214EF] px-4 py-2 rounded text-sm font-semibold hover:bg-[#450B7D] transition"
           >
             Live demo
           </a>
           <a
-            href="/"
+            href={github}
             className="px-4 py-2 rounded text-sm font-medium hover:underline "
           >
             Github
