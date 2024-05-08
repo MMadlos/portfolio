@@ -6,7 +6,7 @@ export default function Hero() {
       <div class="circle-lg"></div>
 
       <div className="flex justify-center items-end h-full">
-        <div className="h-[70vh] px-12 flex flex-row gap-4 lg:max-w-[700px]">
+        <div className="h-[70vh] flex flex-row gap-4 lg:max-w-[600px]">
           <div className="relative">
             <div className="h-full w-[1px] bg-gradient-to-b from-white to-#[1E0E2E] to-100%"></div>
             <svg
@@ -19,7 +19,7 @@ export default function Hero() {
             </svg>
           </div>
 
-          <div className="flex flex-col gap-4 pt-6">
+          <div className="flex flex-col gap-4 pt-6 pl-6">
             <h4 className="text-white/50 font-semibold">Michael Madlos</h4>
             <h3 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
               Front-End Developer

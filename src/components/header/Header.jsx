@@ -13,13 +13,13 @@ export default function Header() {
         <div className="flex gap-4 text-white ">
           <a
             href="https://www.linkedin.com/in/michaelmadlos/"
-            className="font-semibold text-sm sm:px-4 sm:py-2 hover:text-black"
+            className="font-medium text-sm sm:px-4 sm:py-2 hover:text-black"
           >
             LinkedIn
           </a>
           <a
             href="https://github.com/MMadlos"
-            className="font-semibold text-sm sm:px-4 sm:py-2 hover:text-black"
+            className="font-medium text-sm sm:px-4 sm:py-2 hover:text-black"
           >
             GitHub
           </a>
