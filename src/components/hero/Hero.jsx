@@ -20,13 +20,13 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-col gap-3 sm:gap-4 pt-6 sm:pl-6">
-            <h4 className="text-white/50 text-sm font-medium sm:text-base sm:font-semibold ">
+            <h4 className="text-white/70 text-sm font-medium sm:text-base sm:font-semibold ">
               Michael Madlos
             </h4>
-            <h3 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+            <h3 className="text-3xl font-semibold  text-white md:text-4xl">
               Front-End Developer
             </h3>
-            <p className="text-white/70 sm:text-white/50 text-base">
+            <p className="text-white/70 font-light text-base">
               Background in UX/UI design and customer-centric roles. Experienced
               in communicating complex concepts to both technical and
               non-technical users. Problem solver and self-taught programmer.
@@ -36,14 +36,14 @@ export default function Hero() {
               <a
                 href="https://www.linkedin.com/in/michaelmadlos/"
                 target="_blank"
-                className="bg-[#8214EF] text-white py-2 px-6 rounded font-semibold sm:min-w-[150px] hover:opacity-60 text-center"
+                className="bg-[#8214EF] text-white py-2 px-6 rounded font-medium sm:min-w-[150px] hover:opacity-60 text-center"
               >
                 LinkedIn
               </a>
               <a
                 href="https://github.com/MMadlos"
                 target="_blank"
-                className="bg-black text-white py-2 px-6 rounded font-semibold sm:min-w-[150px] hover:opacity-60 text-center"
+                className="bg-black text-white py-2 px-6 rounded font-medium sm:min-w-[150px] hover:opacity-60 text-center"
               >
                 GitHub
               </a>
