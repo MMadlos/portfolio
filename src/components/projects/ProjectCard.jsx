@@ -7,7 +7,7 @@ export default function ProjectCard({ projectData }) {
 
   return (
     <a href={website} className="group ">
-      <article className="flex flex-col sm:flex-row gap-6 sm:gap-12 border border-[#5810A2]/20 hover:border-[#5810A2]/70 p-4 rounded-md bg-[#5810A2]/20 sm:bg-[#5810A2]/10 sm:hover:bg-[#1D0D35]/70 backdrop-blur group-hover/list:opacity-15 hover:!opacity-100 transition-opacity ">
+      <article className="flex flex-col sm:flex-row gap-6 sm:gap-12 border border-[#5810A2]/20 hover:border-[#5810A2]/70 p-4 rounded-md bg-[#5810A2]/20 sm:bg-[#5810A2]/10 sm:hover:bg-[#1D0D35]/70 backdrop-blur sm:group-hover/list:opacity-15 sm:hover:!opacity-100 transition-opacity ">
         {!isImageEmpty && (
           <picture className="">
             <img
