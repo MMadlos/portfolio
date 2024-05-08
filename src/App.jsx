@@ -8,7 +8,7 @@ import ProjectList from "./components/projects/ProjectList";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <ProjectList />
       <Footer />
