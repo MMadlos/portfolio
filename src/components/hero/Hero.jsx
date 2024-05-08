@@ -23,7 +23,7 @@ export default function Hero() {
             <h4 className="text-white/70 text-sm font-medium sm:text-base sm:font-semibold ">
               Michael Madlos
             </h4>
-            <h3 className="text-3xl font-semibold  text-white md:text-4xl">
+            <h3 className="text-3xl font-bold  text-white md:text-4xl">
               Front-End Developer
             </h3>
             <p className="text-white/70 font-light text-base">
