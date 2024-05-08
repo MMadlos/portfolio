@@ -3,18 +3,22 @@ export default function ProjectCard({ projectData }) {
 
   const { website } = links;
 
+  const isImageEmpty = imgURL === "";
+
   return (
     <a href={website} className="group ">
       <article className="flex flex-col sm:flex-row gap-12 border border-[#5810A2]/20 hover:border-[#5810A2]/70 p-4 rounded-md bg-[#5810A2]/10 hover:bg-[#1D0D35]/70 backdrop-blur group-hover/list:opacity-15 hover:!opacity-100 transition-opacity ">
-        <picture className="">
-          <img
-            src={imgURL}
-            alt=""
-            className="rounded-sm sm:max-w-[200px] aspect-square object-cover object-right-bottom "
-          />
-        </picture>
+        {!isImageEmpty && (
+          <picture className="">
+            <img
+              src={imgURL}
+              alt=""
+              className="rounded-sm sm:max-w-[175px] aspect-square object-cover object-right-bottom "
+            />
+          </picture>
+        )}
 
-        <div className="flex flex-col gap-10 justify-between">
+        <div className="flex flex-col gap-6 justify-between">
           <div className="flex flex-col gap-2">
             <div className="flex gap-4 items-center ">
               <h2 className=" text-white text-lg group-hover:underline group-hover:underline-offset-4 ">
