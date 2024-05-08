@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const SM_BREAKPOINT = 640;
+
 export default function MainContainer({ children }) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -26,8 +28,20 @@ export default function MainContainer({ children }) {
     #1E0E2E`,
   };
 
+  const stylesXS = {
+    background: `radial-gradient(40vh at 0 50%, rgba(51, 8, 94, 0.75)
+    , transparent 100%),
+    #1E0E2E`,
+  };
+
+  const windowWidth = window.innerWidth;
+  const isSmallBreak = windowWidth < SM_BREAKPOINT;
+
   return (
-    <main className=" px-12 py-20 relative overflow-hidden" style={styles}>
+    <main
+      className="py-36 relative overflow-hidden"
+      style={isSmallBreak ? stylesXS : styles}
+    >
       {children}
     </main>
   );

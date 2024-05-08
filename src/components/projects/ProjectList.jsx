@@ -6,13 +6,13 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectList() {
   return (
     <MainContainer>
-      <div className="container mx-auto max-w-[700px]">
+      <div className="container px-4 sm:px-0 sm:mx-auto max-w-[700px]">
         <div className="flex flex-row gap-2 items-center mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="size-6 text-[#B080FF]"
+            className="size-6 text-[#B080FF] animate-pulse"
           >
             <path
               fill-rule="evenodd"
