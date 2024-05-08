@@ -38,14 +38,14 @@ export default function Hero() {
                 target="_blank"
                 className="bg-[#8214EF] text-white py-2 px-4 rounded font-semibold min-w-[150px] hover:opacity-60 text-center"
               >
-                Linkedin
+                LinkedIn
               </a>
               <a
                 href="https://github.com/MMadlos"
                 target="_blank"
                 className="bg-black text-white py-2 px-4 rounded font-semibold min-w-[150px] hover:opacity-60 text-center"
               >
-                Github
+                GitHub
               </a>
             </div>
           </div>
