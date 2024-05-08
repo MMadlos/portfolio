@@ -75,8 +75,20 @@ const BATTLESHIP = {
   },
 };
 
+const CRONOS = {
+  imgURL: "",
+  header: "Cronos",
+  technologies: ["React", "Tailwind CSS", "Vite"],
+  description:
+    "Integrated table creator with a date picker and a participant list component. The goal is to quickly and visually assess the availability of event participants.",
+  links: {
+    website: "https://cronos-app.vercel.app/",
+  },
+};
+
 Object.freeze(DASHBOARD);
 Object.freeze(OSHOP);
 Object.freeze(BATTLESHIP);
+Object.freeze(CRONOS);
 
-export const PROJECTS_DATA = [DASHBOARD, OSHOP, BATTLESHIP];
+export const PROJECTS_DATA = [DASHBOARD, OSHOP, BATTLESHIP, CRONOS];
