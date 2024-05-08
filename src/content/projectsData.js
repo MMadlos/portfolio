@@ -1,6 +1,7 @@
 import IMG_DASHBOARD from "../assets/projects/Dashboard.png";
 import IMG_OSHOP from "../assets/projects/Oshop.png";
 import IMG_BATTLESHIP from "../assets/projects/Battleship.png";
+import IMG_CRONOS from "../assets/projects/Cronos.jpg";
 
 const DASHBOARD = {
   imgURL: IMG_DASHBOARD,
@@ -76,7 +77,7 @@ const BATTLESHIP = {
 };
 
 const CRONOS = {
-  imgURL: "",
+  imgURL: IMG_CRONOS,
   header: "Cronos",
   technologies: ["React", "Tailwind CSS", "Vite"],
   description:
